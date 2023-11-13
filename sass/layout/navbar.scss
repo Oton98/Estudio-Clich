@@ -1,0 +1,23 @@
+.navbar {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: $color-primary;
+    color: $color-third;
+    height: 10vh;
+
+    &-logo {
+        display: flex;
+    }
+
+    &-links {
+        display: flex;
+        flex-direction: row;
+        align-items: baseline;
+
+        &-item {
+            padding: 0 10vh;
+        }
+    }
+}
