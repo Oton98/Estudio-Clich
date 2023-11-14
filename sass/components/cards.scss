@@ -31,3 +31,51 @@ img {
     width: 300px;
     height: 300px;
 }
+
+.estudio-contenedor-presentacion-principal-tarjeta {
+
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    background-color: $color-primary;
+    padding: 24px;
+    color: $color-tertiary;
+
+    &-img {
+        background-color: white;
+    }
+
+    &-titulo {
+        padding-top: 16px;
+    }
+
+    &-descripcion {
+        display: flex;
+        flex-direction: column;
+        padding-top: 16px;
+        row-gap: 24px;
+    }
+}
+
+.estudio-contenedor-presentacion-secundaria-tarjeta {
+
+    background-color: $color-primary;
+    padding: 24px;
+    color: $color-tertiary;
+
+    &-img {
+        background-color: white;
+    }
+
+    &-titulo {
+        padding-top: 24px;
+    }
+
+    &-descripcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        row-gap: 24px;
+    }
+}

@@ -62,6 +62,64 @@ img {
   height: 300px;
 }
 
+.estudio-contenedor-presentacion-principal-tarjeta {
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  background-color: #312c47;
+  padding: 24px;
+  color: #f2f8f9;
+}
+.estudio-contenedor-presentacion-principal-tarjeta-img {
+  background-color: white;
+}
+.estudio-contenedor-presentacion-principal-tarjeta-titulo {
+  padding-top: 16px;
+}
+.estudio-contenedor-presentacion-principal-tarjeta-descripcion {
+  display: flex;
+  flex-direction: column;
+  padding-top: 16px;
+  row-gap: 24px;
+}
+
+.estudio-contenedor-presentacion-secundaria-tarjeta {
+  background-color: #312c47;
+  padding: 24px;
+  color: #f2f8f9;
+}
+.estudio-contenedor-presentacion-secundaria-tarjeta-img {
+  background-color: white;
+}
+.estudio-contenedor-presentacion-secundaria-tarjeta-titulo {
+  padding-top: 24px;
+}
+.estudio-contenedor-presentacion-secundaria-tarjeta-descripcion {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 24px;
+}
+
+.formulario {
+  background-color: #312c47;
+}
+.formulario-top {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  column-gap: 24px;
+}
+.formulario-bottom {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 24px;
+}
+
 .navbar {
   display: flex;
   flex-direction: row;
@@ -93,9 +151,9 @@ img {
 }
 
 .intro {
-  background-color: blue;
   height: 90vh;
   background-image: url("../../fotos/Sin título-1-06-01.jpg");
+  background-size: cover;
 }
 .intro-contenedor {
   padding-top: 60vh;
@@ -147,6 +205,52 @@ img {
   display: flex;
   flex-direction: row;
   column-gap: 5vh;
+}
+
+.estudio {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #eaf1f3;
+}
+.estudio-contenedor {
+  margin-left: 30vh;
+  margin-right: 80vh;
+}
+.estudio-contenedor-titulo {
+  margin: 4vh 0vh;
+}
+.estudio-contenedor-titulo h1 {
+  color: #312c47;
+  font-size: 4vh;
+}
+.estudio-contenedor-presentacion {
+  display: flex;
+  flex-direction: column;
+  row-gap: 64px;
+}
+.estudio-contenedor-presentacion-principal {
+  display: flex;
+  flex-direction: row;
+}
+.estudio-contenedor-presentacion-secundaria {
+  display: flex;
+  flex-direction: row;
+  column-gap: 32px;
+}
+
+.contacto {
+  height: 90vh;
+  background-image: url("../../fotos/Sin título-1-06-06.jpg");
+  background-size: cover;
+  color: white;
+}
+.contacto-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: baseline;
+  align-items: baseline;
+  padding: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */
