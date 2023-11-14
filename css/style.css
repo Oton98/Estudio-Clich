@@ -1,3 +1,4 @@
+@charset "UTF-8";
 * {
   margin: 0;
   padding: 0;
@@ -14,6 +15,51 @@ a {
 
 html {
   height: 100%;
+}
+
+.primary-button {
+  background-color: #0eae99;
+  color: #f2f8f9;
+  padding: 20px;
+  border-radius: 2px;
+  width: 15vh;
+  font-size: 1.7vh;
+}
+
+.secondary-button {
+  background-color: #545454;
+  color: #f2f8f9;
+  padding: 20px;
+  border-radius: 2px;
+  width: 15vh;
+  font-size: 1.7vh;
+}
+
+.servicios-contenedor-tarjetas-tarjeta-img {
+  height: 300px;
+  width: 300px;
+}
+.servicios-contenedor-tarjetas-tarjeta-text {
+  background-color: #d7d7db;
+  color: #312c47;
+  height: 200px;
+}
+.servicios-contenedor-tarjetas-tarjeta-text h3 {
+  font-size: 24px;
+  padding: 16px 32px;
+}
+.servicios-contenedor-tarjetas-tarjeta-text p {
+  font-size: 16px;
+  padding: 0px 32px;
+  padding-bottom: 32px;
+}
+.servicios-contenedor-tarjetas-tarjeta-text a {
+  padding: 0px 32px;
+}
+
+img {
+  width: 300px;
+  height: 300px;
 }
 
 .navbar {
@@ -44,6 +90,63 @@ html {
   background-color: #312c47;
   color: #f2f8f9;
   height: 10vh;
+}
+
+.intro {
+  background-color: blue;
+  height: 90vh;
+  background-image: url("../../fotos/Sin título-1-06-01.jpg");
+}
+.intro-contenedor {
+  padding-top: 60vh;
+  margin-left: 30vh;
+  margin-right: 80vh;
+}
+.intro-contenedor-inicio {
+  display: flex;
+  flex-direction: column;
+  background-color: #312c47;
+  height: 30vh;
+  padding-left: 4vh;
+  padding-right: 4vh;
+  row-gap: 5vh;
+}
+.intro-contenedor-inicio-title {
+  display: flex;
+  justify-content: flex-start;
+  padding-top: 4vh;
+}
+.intro-contenedor-inicio-title h1 {
+  color: #f2f8f9;
+  font-size: 4vh;
+}
+.intro-contenedor-inicio-buttons {
+  display: flex;
+  justify-content: flex-start;
+  column-gap: 4vh;
+}
+
+.servicios {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background-color: #312c47;
+}
+.servicios-contenedor {
+  margin-left: 30vh;
+  margin-right: 80vh;
+}
+.servicios-contenedor-titulo {
+  margin: 4vh 0vh;
+}
+.servicios-contenedor-titulo h1 {
+  color: #f2f8f9;
+  font-size: 4vh;
+}
+.servicios-contenedor-tarjetas {
+  display: flex;
+  flex-direction: row;
+  column-gap: 5vh;
 }
 
 /*# sourceMappingURL=style.css.map */
