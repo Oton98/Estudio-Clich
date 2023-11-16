@@ -1,81 +1,51 @@
-.servicios-contenedor-tarjetas-tarjeta {
+.servicios-contenedor-tarjetas-tarjeta{
+    background-color: $color-senary;
+    color: $color-primary;
+    display: flex;
+    flex-direction: column;
+    width: 250px;
 
-    &-img {
-        height: 300px;
-        width: 300px;
+    &-img{
+
     }
 
-    &-text {
-        background-color: $color-senary;
-        color: $color-primary;
-        height: 200px;
-
-        h3 {
-            font-size: 24px;
-            padding: 16px 32px;
-        }
-
-        p {
-            font-size: 16px;
-            padding: 0px 32px;
-            padding-bottom: 32px;
-        }
-
-        a {
-            padding: 0px 32px;
-        }
+    &-text{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        row-gap: 20px;
+        padding: 24px 16px;
     }
+
 }
 
-img {
-    width: 300px;
-    height: 300px;
-}
-
-.estudio-contenedor-presentacion-principal-tarjeta {
-
+.estudio-contenedor-presentacion-principal-tarjeta{
     display: flex;
     flex-direction: row;
-    column-gap: 20px;
-    background-color: $color-primary;
+    justify-content: center;
     padding: 24px;
+    column-gap: 24px;
+
+    background-color: $color-primary;
     color: $color-tertiary;
 
-    &-img {
+    img{
+        width: 200px;
+        height: 200px;
         background-color: white;
+        
     }
-
-    &-titulo {
-        padding-top: 16px;
-    }
-
-    &-descripcion {
-        display: flex;
-        flex-direction: column;
-        padding-top: 16px;
-        row-gap: 24px;
-    }
+    
 }
 
-.estudio-contenedor-presentacion-secundaria-tarjeta {
-
+.estudio-contenedor-presentacion-secundaria-tarjeta{
     background-color: $color-primary;
-    padding: 24px;
     color: $color-tertiary;
 
-    &-img {
+    img{
+        width: 200px;
+        height: 200px;
         background-color: white;
-    }
-
-    &-titulo {
-        padding-top: 24px;
-    }
-
-    &-descripcion {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        row-gap: 24px;
+        
     }
 }

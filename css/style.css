@@ -8,6 +8,11 @@
   outline: none;
 }
 
+img {
+  max-width: 100%;
+  height: auto;
+}
+
 a {
   text-decoration: none;
   color: inherit;
@@ -35,71 +40,44 @@ html {
   font-size: 1.7vh;
 }
 
-.servicios-contenedor-tarjetas-tarjeta-img {
-  height: 300px;
-  width: 300px;
-}
-.servicios-contenedor-tarjetas-tarjeta-text {
+.servicios-contenedor-tarjetas-tarjeta {
   background-color: #d7d7db;
   color: #312c47;
-  height: 200px;
+  display: flex;
+  flex-direction: column;
+  width: 250px;
 }
-.servicios-contenedor-tarjetas-tarjeta-text h3 {
-  font-size: 24px;
-  padding: 16px 32px;
-}
-.servicios-contenedor-tarjetas-tarjeta-text p {
-  font-size: 16px;
-  padding: 0px 32px;
-  padding-bottom: 32px;
-}
-.servicios-contenedor-tarjetas-tarjeta-text a {
-  padding: 0px 32px;
-}
-
-img {
-  width: 300px;
-  height: 300px;
+.servicios-contenedor-tarjetas-tarjeta-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  row-gap: 20px;
+  padding: 24px 16px;
 }
 
 .estudio-contenedor-presentacion-principal-tarjeta {
   display: flex;
   flex-direction: row;
-  column-gap: 20px;
-  background-color: #312c47;
+  justify-content: center;
   padding: 24px;
+  column-gap: 24px;
+  background-color: #312c47;
   color: #f2f8f9;
 }
-.estudio-contenedor-presentacion-principal-tarjeta-img {
+.estudio-contenedor-presentacion-principal-tarjeta img {
+  width: 200px;
+  height: 200px;
   background-color: white;
-}
-.estudio-contenedor-presentacion-principal-tarjeta-titulo {
-  padding-top: 16px;
-}
-.estudio-contenedor-presentacion-principal-tarjeta-descripcion {
-  display: flex;
-  flex-direction: column;
-  padding-top: 16px;
-  row-gap: 24px;
 }
 
 .estudio-contenedor-presentacion-secundaria-tarjeta {
   background-color: #312c47;
-  padding: 24px;
   color: #f2f8f9;
 }
-.estudio-contenedor-presentacion-secundaria-tarjeta-img {
+.estudio-contenedor-presentacion-secundaria-tarjeta img {
+  width: 200px;
+  height: 200px;
   background-color: white;
-}
-.estudio-contenedor-presentacion-secundaria-tarjeta-titulo {
-  padding-top: 24px;
-}
-.estudio-contenedor-presentacion-secundaria-tarjeta-descripcion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  row-gap: 24px;
 }
 
 .formulario {
@@ -136,6 +114,7 @@ img {
   display: flex;
   flex-direction: row;
   align-items: baseline;
+  flex-wrap: wrap;
 }
 .navbar-links-item {
   padding: 0 10vh;
@@ -157,8 +136,6 @@ img {
 }
 .intro-contenedor {
   padding-top: 60vh;
-  margin-left: 30vh;
-  margin-right: 80vh;
 }
 .intro-contenedor-inicio {
   display: flex;
@@ -185,72 +162,39 @@ img {
 }
 
 .servicios {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
   background-color: #312c47;
-}
-.servicios-contenedor {
-  margin-left: 30vh;
-  margin-right: 80vh;
+  color: #f2f8f9;
+  height: 90vh;
 }
 .servicios-contenedor-titulo {
-  margin: 4vh 0vh;
-}
-.servicios-contenedor-titulo h1 {
-  color: #f2f8f9;
-  font-size: 4vh;
+  padding: 10vh 0vh;
 }
 .servicios-contenedor-tarjetas {
   display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
   flex-direction: row;
-  column-gap: 5vh;
+  column-gap: 4vh;
 }
 
 .estudio {
-  display: flex;
-  flex-direction: column;
-  height: 100vh;
   background-color: #eaf1f3;
-}
-.estudio-contenedor {
-  margin-left: 30vh;
-  margin-right: 80vh;
+  color: #312c47;
+  height: 150vh;
 }
 .estudio-contenedor-titulo {
-  margin: 4vh 0vh;
-}
-.estudio-contenedor-titulo h1 {
-  color: #312c47;
-  font-size: 4vh;
+  padding: 10vh 0vh;
 }
 .estudio-contenedor-presentacion {
   display: flex;
   flex-direction: column;
-  row-gap: 64px;
-}
-.estudio-contenedor-presentacion-principal {
-  display: flex;
-  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+  column-gap: 4vh;
 }
 .estudio-contenedor-presentacion-secundaria {
   display: flex;
   flex-direction: row;
-  column-gap: 32px;
-}
-
-.contacto {
-  height: 90vh;
-  background-image: url("../../fotos/Sin título-1-06-06.jpg");
-  background-size: cover;
-  color: white;
-}
-.contacto-contenedor {
-  display: flex;
-  flex-direction: row;
-  justify-content: baseline;
-  align-items: baseline;
-  padding: 400px;
 }
 
 /*# sourceMappingURL=style.css.map */

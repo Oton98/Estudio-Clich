@@ -1,40 +1,30 @@
 .estudio {
 
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
     background-color: $color-quinary;
+    color: $color-primary;
+    height: 150vh;
 
     &-contenedor {
 
-        margin-left: 30vh;
-        margin-right: 80vh;
-
         &-titulo {
 
-            margin: 4vh 0vh;
+            padding: 10vh 0vh;
 
-            h1 {
-                color: $color-primary;
-                font-size: 4vh;
-            }
         }
 
-        &-presentacion {
+        &-presentacion{
+
             display: flex;
             flex-direction: column;
-            row-gap: 64px;
-
-            &-principal{
-                display: flex;
-                flex-direction: row;
-            }
+            justify-content: center;
+            flex-wrap: wrap;
+            column-gap: 4vh;
 
             &-secundaria{
                 display: flex;
                 flex-direction: row;
-                column-gap: 32px;
             }
+            
         }
     }
 }

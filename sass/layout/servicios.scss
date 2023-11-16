@@ -1,33 +1,23 @@
 .servicios {
-
-    display: flex;
-    flex-direction: column;
-    height: 100vh;
     background-color: $color-primary;
+    color: $color-tertiary;
+    height: 90vh;
 
     &-contenedor {
 
-        margin-left: 30vh;
-        margin-right: 80vh;
-
-
+        
         &-titulo {
 
-            margin: 4vh 0vh;
+        padding: 10vh 0vh;    
 
-            h1 {
-                color: $color-tertiary;
-                font-size: 4vh;
-            }
         }
 
         &-tarjetas {
             display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
             flex-direction: row;
-            column-gap: 5vh;
-
+            column-gap: 4vh;
         }
     }
-
-
 }
