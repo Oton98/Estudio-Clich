@@ -73,11 +73,23 @@ html {
 .estudio-contenedor-presentacion-secundaria-tarjeta {
   background-color: #312c47;
   color: #f2f8f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  row-gap: 16px;
+  padding: 16px;
 }
 .estudio-contenedor-presentacion-secundaria-tarjeta img {
   width: 200px;
   height: 200px;
   background-color: white;
+}
+.estudio-contenedor-presentacion-secundaria-tarjeta-descripcion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  row-gap: 16px;
 }
 
 .formulario {
@@ -88,7 +100,6 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  column-gap: 24px;
 }
 .formulario-bottom {
   display: flex;
@@ -136,14 +147,15 @@ html {
 }
 .intro-contenedor {
   padding-top: 60vh;
+  padding-left: 20vh;
+  padding-right: 85vh;
 }
 .intro-contenedor-inicio {
   display: flex;
   flex-direction: column;
   background-color: #312c47;
   height: 30vh;
-  padding-left: 4vh;
-  padding-right: 4vh;
+  padding: 0px 4vh;
   row-gap: 5vh;
 }
 .intro-contenedor-inicio-title {
@@ -167,12 +179,12 @@ html {
   height: 90vh;
 }
 .servicios-contenedor-titulo {
-  padding: 10vh 0vh;
+  padding: 32px 0vh;
+  padding-left: 20vh;
 }
 .servicios-contenedor-tarjetas {
   display: flex;
   justify-content: center;
-  flex-wrap: wrap;
   flex-direction: row;
   column-gap: 4vh;
 }
@@ -180,21 +192,55 @@ html {
 .estudio {
   background-color: #eaf1f3;
   color: #312c47;
-  height: 150vh;
+  height: 90%;
 }
 .estudio-contenedor-titulo {
-  padding: 10vh 0vh;
+  padding: 32px 25vh;
+  font-size: 32px;
 }
 .estudio-contenedor-presentacion {
   display: flex;
   flex-direction: column;
   justify-content: center;
   flex-wrap: wrap;
+  row-gap: 32px;
   column-gap: 4vh;
+  margin: 0vh 20vh;
 }
 .estudio-contenedor-presentacion-secundaria {
   display: flex;
   flex-direction: row;
+  column-gap: 24px;
+  margin-bottom: 64px;
+}
+
+.contacto {
+  height: 90vh;
+  background-image: url("../../fotos/Sin título-1-06-06.jpg");
+  background-size: cover;
+}
+.contacto-contenedor {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding-top: 20vh;
+  margin: 0px 30vh;
+  column-gap: 64px;
+}
+.contacto-contenedor-informacion {
+  color: #f2f8f9;
+  display: flex;
+  flex-direction: column;
+  row-gap: 48px;
+}
+.contacto-contenedor-informacion-title {
+  font-size: 32px;
+}
+.contacto-contenedor-informacion-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
 }
 
 /*# sourceMappingURL=style.css.map */

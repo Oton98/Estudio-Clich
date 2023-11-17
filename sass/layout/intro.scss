@@ -2,19 +2,19 @@
     height: 90vh;
     background-image: url('../../fotos/Sin\ título-1-06-01.jpg');
     background-size: cover;
-    
+
     &-contenedor {
 
         padding-top: 60vh;
-
+        padding-left: 20vh;
+        padding-right: 85vh;
 
         &-inicio {
             display: flex;
             flex-direction: column;
             background-color: $color-primary;
             height: 30vh;
-            padding-left: 4vh;
-            padding-right: 4vh;
+            padding: 0px 4vh;
             row-gap: 5vh;
 
             &-title {

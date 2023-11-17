@@ -1,3 +1,37 @@
 .contacto {
-   
+    height: 90vh;
+    background-image: url('../../fotos/Sin\ título-1-06-06.jpg');
+    background-size: cover;
+
+    &-contenedor {
+
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        padding-top: 20vh;
+        margin: 0px 30vh;
+        column-gap: 64px;
+
+        &-informacion {
+
+            color: $color-tertiary;
+            display: flex;
+            flex-direction: column;
+            row-gap: 48px;
+
+            &-title{
+                font-size: 32px;
+            }
+
+            &-text{
+                display: flex;
+                flex-direction: column;
+                row-gap: 32px;
+
+            }
+
+        }
+    }
+
 }
