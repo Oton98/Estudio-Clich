@@ -5,7 +5,7 @@
     align-items: center;
     background-color: $color-primary;
     color: $color-tertiary;
-    height: 10vh;
+    height: 64px;
 
     &-logo {
         display: flex;
@@ -18,7 +18,7 @@
         flex-wrap: wrap;
 
         &-item {
-            padding: 0 10vh;
+            padding: 0 5.5vh;
         }
     }
 }

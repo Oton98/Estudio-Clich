@@ -6,6 +6,7 @@
   text-decoration: none;
   border: none;
   outline: none;
+  font-family: "Roboto Condensed", sans-serif;
 }
 
 img {
@@ -58,16 +59,27 @@ html {
 .estudio-contenedor-presentacion-principal-tarjeta {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  padding: 24px;
-  column-gap: 24px;
+  justify-content: space-between;
   background-color: #312c47;
   color: #f2f8f9;
+  padding: 16px;
+  column-gap: 32px;
 }
-.estudio-contenedor-presentacion-principal-tarjeta img {
-  width: 200px;
-  height: 200px;
+.estudio-contenedor-presentacion-principal-tarjeta-img {
+  display: flex;
+  width: 100%;
+  flex-grow: 1;
+  object-fit: cover;
   background-color: white;
+}
+.estudio-contenedor-presentacion-principal-tarjeta-descripcion {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
+}
+.estudio-contenedor-presentacion-principal-tarjeta-descripcion-button {
+  display: flex;
+  justify-content: flex-start;
 }
 
 .estudio-contenedor-presentacion-secundaria-tarjeta {
@@ -75,21 +87,39 @@ html {
   color: #f2f8f9;
   display: flex;
   flex-direction: column;
-  justify-content: center;
-  align-items: center;
+  align-items: stretch;
   row-gap: 16px;
   padding: 16px;
+  max-width: 226px;
 }
-.estudio-contenedor-presentacion-secundaria-tarjeta img {
-  width: 200px;
-  height: 200px;
+.estudio-contenedor-presentacion-secundaria-tarjeta-img {
+  width: 100%;
+  height: 30vh;
+  object-fit: cover;
   background-color: white;
+}
+.estudio-contenedor-presentacion-secundaria-tarjeta-titulo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-height: 40px;
 }
 .estudio-contenedor-presentacion-secundaria-tarjeta-descripcion {
   display: flex;
   flex-direction: column;
   align-items: center;
   row-gap: 16px;
+  flex-grow: 1;
+  /* Hace que la descripción ocupe todo el espacio disponible */
+}
+.estudio-contenedor-presentacion-secundaria-tarjeta-descripcion p {
+  flex-grow: 1;
+  /* Hace que el párrafo ocupe todo el espacio disponible */
+}
+.estudio-contenedor-presentacion-secundaria-tarjeta-descripcion .primary-button {
+  /* Estilos para el botón */
+  align-self: center;
+  /* Alinea el botón al principio de su contenedor */
 }
 
 .formulario {
@@ -116,7 +146,7 @@ html {
   align-items: center;
   background-color: #312c47;
   color: #f2f8f9;
-  height: 10vh;
+  height: 64px;
 }
 .navbar-logo {
   display: flex;
@@ -128,7 +158,7 @@ html {
   flex-wrap: wrap;
 }
 .navbar-links-item {
-  padding: 0 10vh;
+  padding: 0 5.5vh;
 }
 
 .footer {
@@ -205,12 +235,15 @@ html {
   flex-wrap: wrap;
   row-gap: 32px;
   column-gap: 4vh;
-  margin: 0vh 20vh;
+  padding: 0px 20vh;
 }
 .estudio-contenedor-presentacion-secundaria {
   display: flex;
   flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
   column-gap: 24px;
+  row-gap: 24px;
   margin-bottom: 64px;
 }
 

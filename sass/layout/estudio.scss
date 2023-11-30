@@ -21,12 +21,16 @@
             flex-wrap: wrap;
             row-gap: 32px;
             column-gap: 4vh;
-            margin: 0vh 20vh;
+            padding: 0px 20vh;
+
 
             &-secundaria{
                 display: flex;
                 flex-direction: row;
+                justify-content: space-between;
+                flex-wrap: wrap;
                 column-gap: 24px;
+                row-gap: 24px;
                 margin-bottom: 64px;
             }
             
