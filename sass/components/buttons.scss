@@ -1,17 +1,17 @@
-.primary-button{
-    background-color: $color-secundary;
-    color: $color-tertiary;
-    padding: 20px;
-    border-radius: 2px;
-    width: 15vh;
-    font-size: 1.7vh;
-}
-
-.secondary-button{
+.primary-button,
+.secondary-button {
     background-color: $color-quaternary;
     color: $color-tertiary;
-    padding: 20px;
+    padding: 10px 20px; /* Ajusté el padding para que sea más proporcionado */
     border-radius: 2px;
-    width: 15vh;
-    font-size: 1.7vh;
+    min-width: 100px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: inline-block; /* Asegura que el ancho mínimo se respete */
+    text-align: center; /* Centra el texto horizontalmente en el botón */
+    text-decoration: none; /* Elimina el subrayado por defecto en los enlaces */
+}
+
+.secondary-button {
+    background-color: $color-secundary;
 }

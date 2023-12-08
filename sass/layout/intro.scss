@@ -1,30 +1,45 @@
 .intro {
-    height: 90vh;
+    height: 100vh;
+    position: relative;
     background-image: url('../../fotos/Sin\ título-1-06-01.jpg');
     background-size: cover;
 
-    &-contenedor {
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según lo oscuro que desees el filtro */
+    }
 
-        padding-top: 60vh;
+    &-contenedor {
+        position: relative; /* Asegura que el contenedor sea un contexto de apilamiento para los elementos internos */
+        z-index: 1; /* Asegura que los elementos internos estén por encima del pseudo-elemento ::before */
+
+        padding-top: 40vh;
         padding-left: 20vh;
-        padding-right: 85vh;
+
+        width: auto;
 
         &-inicio {
             display: flex;
             flex-direction: column;
-            background-color: $color-primary;
-            height: 30vh;
             padding: 0px 4vh;
             row-gap: 5vh;
 
             &-title {
                 display: flex;
+                flex-direction: column;
                 justify-content: flex-start;
                 padding-top: 4vh;
+                color: $color-tertiary;
+                row-gap: 24px;
 
                 h1 {
                     color: $color-tertiary;
-                    font-size: 4vh;
+                    font-size: 5vh;
                 }
             }
 
@@ -32,7 +47,6 @@
                 display: flex;
                 justify-content: flex-start;
                 column-gap: 4vh;
-
             }
         }
     }

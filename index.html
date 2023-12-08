@@ -12,16 +12,16 @@
     <link rel="stylesheet" href="./css/style.css">
 </head>
 
-<body>
+<body id="inicio">
 
-    <nav class="navbar">
+    <nav class="navbar" id="navbar">
 
         <div class="navbar-logo">
-            <img src="./fotos/Mariana Clich Abogada logo-01.png" alt="logo_estudio_clich">
+            <a href="#inicio"><img src="./fotos/Mariana Clich Abogada logo-01.png" alt="logo_estudio_clich"></a>
         </div>
 
         <ul class="navbar-links">
-            <li class="navbar-links-item">Inicio</li>
+            <li class="navbar-links-item"><a href="#inicio">Inicio</a></li>
             <li class="navbar-links-item"><a href="#servicios">Servicios</a></li>
             <li class="navbar-links-item"><a href="#estudio">Estudio</a></li>
             <li class="navbar-links-item"><a href="#contacto">Contacto</a></li>
@@ -33,11 +33,17 @@
         <div class="intro-contenedor">
             <div class="intro-contenedor-inicio">
                 <div class="intro-contenedor-inicio-title">
-                    <h1>Construyendo soluciones y asegurando la defensa de tus derechos</h1>
+                    <h1>Construimos <br>
+                         soluciones.</h1>
+                    <h3>Defendemos tus derechos.</h3>
                 </div>
                 <div class="intro-contenedor-inicio-buttons">
-                    <button class="primary-button">Ver Servicios</button>
-                    <button class="secondary-button">Contactar</button>
+                    <a href="#servicios">
+                        <button type="button" class="primary-button">Servicios Jurídicos</button>
+                    </a>
+                    <a href="#contacto">
+                        <button type="button" class="secondary-button">Contactar</button>
+                    </a>
                 </div>
             </div>
         </div>
@@ -48,7 +54,7 @@
 
         <div class="servicios-contenedor">
             <div class="servicios-contenedor-titulo">
-                <h1>Servicios</h1>
+                <h2>Servicios</h2>
             </div>
 
             <div class="servicios-contenedor-tarjetas">
@@ -114,7 +120,7 @@
         <div class="estudio-contenedor">
 
             <div class="estudio-contenedor-titulo">
-                <h1>Estudio</h1>
+                <h2>Estudio</h2>
             </div>
 
             <div class="estudio-contenedor-presentacion">
@@ -206,7 +212,7 @@
 
             <div class="contacto-contenedor-informacion">
                 <div class="contacto-contenedor-informacion-title">
-                    <h1>¿Tenés alguna consulta?</h1>
+                    <h2>¿Tenés alguna consulta?</h2>
                 </div>
                 <div class="contacto-contenedor-informacion-text">
                     <p>En el estudio siempre habrá alguien dispuesto a responder a todas sus preguntas. Puede llamarnos
@@ -240,6 +246,8 @@
     <footer class="footer">
         <p>Copyright 2023 Estudio Jurídico M. Clich y Asociados</p>
     </footer>
+
+    <script src="./js/ocultarNav.js"></script>
 
 </body>
 
