@@ -19,13 +19,14 @@
         z-index: 1; /* Asegura que los elementos internos estén por encima del pseudo-elemento ::before */
 
         padding-top: 37vh;
-        padding-left: 35vh;
+        padding-left: 16vw;
 
         width: auto;
 
         &-inicio {
             display: flex;
             flex-direction: column;
+            padding: 32px;
          
             row-gap: 5vh;
 

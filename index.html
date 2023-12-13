@@ -249,26 +249,44 @@
                     <h2>¿Tenés alguna consulta?</h2>
                 </div>
                 <div class="contacto-contenedor-informacion-text">
+                    
                     <p>En el estudio siempre habrá alguien dispuesto a responder a todas sus preguntas. Puede llamarnos
                         por
                         teléfono, enviarnos un mail o enviarnos un mensaje a nuestro Whatsapp</p>
-                    <p>Mail: estudio.clich@gmail.com</p>
-                    <p>Whatsapp: (011) 15 6759 9191</p>
+                    
+                        <div class="contacto-contenedor-informacion-text-contacto">
+                        <div class="contacto-contenedor-informacion-text-contacto-direcciones">
+                            <i class="fa-solid fa-envelope" style="color: #e3e9e9;"></i>
+                            <p>estudio.clich@gmail.com</p>
+                        </div>
+                        <div class="contacto-contenedor-informacion-text-contacto-direcciones">
+                            <i class="fa-solid fa-phone" style="color: #e3e9e9;"></i>
+                            <p>(011) 15 6759 9191</p>
+                        </div>
+                        <div class="contacto-contenedor-informacion-text-contacto-direcciones">
+                            <i class="fa-solid fa-location-dot" style="color: #e3e9e9;"></i>
+                            <p>Buenos Aires, Argentina</p>
+                        </div>
+                    </div>
+
                 </div>
             </div>
 
-            <form class="formulario">
-                <div class="formulario-top">
-                    <label for="name"></label>
+            <form class="formulario" action="https://formsubmit.co/joaquindiago98@gmail.com" method="post">
+
+                <div class="formulario-inputs">
+                    <label for="name">Nombre y Apellido</label>
                     <input type="text" id="name" placeholder="Ingrese su nombre" name="name">
-                    <label for="email"></label>
-                    <input type="text" id="email" placeholder="Ingrese su correo" name="email">
-                </div>
-                <div class="formulario-bottom">
-                    <label for="subject"></label>
+                    <label for="subject">Email</label>
                     <input type="text" id="subject" placeholder="Asunto" name="subject">
-                    <label for="message"></label>
-                    <input type="text" id="message" placeholder="Mensaje" name="message">
+                    <label for="email">Asunto del Mensaje</label>
+                    <input type="text" id="email" placeholder="Ingrese su correo" name="email">
+                    <label for="message">Mensaje</label>
+                    <textarea name="message" id="box" cols="30" rows="5" placeholder="Escriba su mensaje"></textarea>
+                </div>
+
+                <div class="formulario-btn">
+                    <input class="primary-button" type="submit" value="Enviar Mensaje">
                 </div>
 
             </form>
@@ -281,8 +299,10 @@
         <img src="./img/logo/Estudio-Clich-Logo.png" alt="">
         <p>Copyright 2023 Estudio Jurídico M. Clich y Asociados</p>
     </footer>
+
     <script src="./js/deslizar.js"></script>
     <script src="./js/ocultarNav.js"></script>
+    <script src="https://kit.fontawesome.com/f097d0c634.js" crossorigin="anonymous"></script>
 
 </body>
 
