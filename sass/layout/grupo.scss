@@ -1,0 +1,16 @@
+.introduccion{
+
+    padding: 64px 35vh;
+    background-color: $color-tertiary;
+
+    &-titulo{
+        margin-bottom: 24px;
+    }
+
+    &-tarjetas{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        column-gap: 32px;
+    }
+}

@@ -1,8 +1,9 @@
 .footer{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
     background-color: $color-primary;
     color: $color-tertiary;
     height: 10vh;
+
 }

@@ -23,10 +23,30 @@ html {
   height: 100%;
 }
 
+h1 {
+  color: #dddcdc;
+  font-size: 7vh;
+}
+
+h2 {
+  font-size: 30pt;
+  font-weight: 400;
+}
+
+h3 {
+  font-size: 40pt;
+  font-weight: bolder;
+}
+
+h4 {
+  font-size: 16pt;
+  font-weight: 400;
+}
+
 .primary-button,
 .secondary-button {
-  background-color: #545454;
-  color: #f2f8f9;
+  background-color: #0f9e88;
+  color: white;
   padding: 10px 20px; /* Ajusté el padding para que sea más proporcionado */
   border-radius: 2px;
   min-width: 100px;
@@ -38,92 +58,71 @@ html {
 }
 
 .secondary-button {
-  background-color: #0eae99;
+  background-color: #2c2d3c;
 }
 
 .servicios-contenedor-tarjetas-tarjeta {
-  background-color: #d7d7db;
-  color: #312c47;
+  background-color: #dddcdc;
+  color: #2c2d3c;
   display: flex;
-  flex-direction: column;
-  width: 250px;
+  flex-direction: row;
+  width: 100%;
+  border-bottom: 16px solid #0f9e88;
+}
+.servicios-contenedor-tarjetas-tarjeta-img {
+  padding: 24px 16px;
 }
 .servicios-contenedor-tarjetas-tarjeta-text {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
-  row-gap: 20px;
-  padding: 24px 16px;
+  row-gap: 16px;
+  padding: 24px 0;
+}
+.servicios-contenedor-tarjetas-tarjeta-text h4 {
+  font-size: 20pt;
+  font-weight: 600;
+}
+.servicios-contenedor-tarjetas-tarjeta-text p, .servicios-contenedor-tarjetas-tarjeta-text a {
+  font-size: 13pt;
+  font-weight: 400;
 }
 
 .estudio-contenedor-presentacion-principal-tarjeta {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  background-color: #312c47;
-  color: #f2f8f9;
-  padding: 16px;
-  column-gap: 32px;
+  background-color: #2c2d3c;
+  color: #dddcdc;
 }
-.estudio-contenedor-presentacion-principal-tarjeta-img {
-  display: flex;
-  width: 100%;
-  flex-grow: 1;
-  object-fit: cover;
-  background-color: white;
-}
-.estudio-contenedor-presentacion-principal-tarjeta-descripcion {
-  display: flex;
-  flex-direction: column;
-  row-gap: 32px;
-}
-.estudio-contenedor-presentacion-principal-tarjeta-descripcion-button {
-  display: flex;
-  justify-content: flex-start;
-}
-
 .estudio-contenedor-presentacion-secundaria-tarjeta {
-  background-color: #312c47;
-  color: #f2f8f9;
-  display: flex;
-  flex-direction: column;
-  align-items: stretch;
-  row-gap: 16px;
-  padding: 16px;
-  max-width: 226px;
+  background-color: #2c2d3c;
+  color: #dddcdc;
 }
-.estudio-contenedor-presentacion-secundaria-tarjeta-img {
-  width: 100%;
-  height: 30vh;
-  object-fit: cover;
-  background-color: white;
-}
-.estudio-contenedor-presentacion-secundaria-tarjeta-titulo {
+.introduccion-tarjetas-tarjeta {
   display: flex;
-  flex-direction: column;
   align-items: center;
-  min-height: 40px;
+  flex-direction: column;
+  color: white;
+  background-color: #2c2d3c;
+  width: 30%;
+  padding: 36px;
+  row-gap: 24px;
+  border-bottom: 16px solid #0f9e88;
 }
-.estudio-contenedor-presentacion-secundaria-tarjeta-descripcion {
+.introduccion-tarjetas-tarjeta img {
+  width: 50%;
+  height: 60%;
+  margin-bottom: 16px; /* Ajusta la cantidad de espacio que deseas entre la imagen y el párrafo */
+}
+.introduccion-tarjetas-tarjeta p {
   display: flex;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   row-gap: 16px;
   flex-grow: 1;
-  /* Hace que la descripción ocupe todo el espacio disponible */
-}
-.estudio-contenedor-presentacion-secundaria-tarjeta-descripcion p {
-  flex-grow: 1;
-  /* Hace que el párrafo ocupe todo el espacio disponible */
-}
-.estudio-contenedor-presentacion-secundaria-tarjeta-descripcion .primary-button {
-  /* Estilos para el botón */
-  align-self: center;
-  /* Alinea el botón al principio de su contenedor */
 }
 
 .formulario {
-  background-color: #312c47;
+  height: 100vh;
+  width: 100%;
+  background-color: #2c2d3c;
 }
 .formulario-top {
   display: flex;
@@ -150,7 +149,7 @@ html {
   align-items: center;
   row-gap: 24px;
   background-color: rgba(32, 32, 32, 0.8);
-  color: #f2f8f9;
+  color: #dddcdc;
   z-index: 2;
   padding: 16px;
   transition: top 0.3s ease-in-out, color 0.3s ease-in-out;
@@ -159,7 +158,9 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-  column-gap: 16px;
+  column-gap: 64px;
+  font-weight: 300;
+  font-size: 16pt;
 }
 .navbar-links-item:hover {
   color: black;
@@ -168,17 +169,17 @@ html {
 
 .footer {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
-  background-color: #312c47;
-  color: #f2f8f9;
+  background-color: #2c2d3c;
+  color: #dddcdc;
   height: 10vh;
 }
 
 .intro {
-  height: 100vh;
+  height: 90vh;
   position: relative;
-  background-image: url("../../fotos/Sin título-1-06-01.jpg");
+  background-image: url("../../img/backgrounds/background-intro.jpg");
   background-size: cover;
 }
 .intro::before {
@@ -193,14 +194,13 @@ html {
 .intro-contenedor {
   position: relative; /* Asegura que el contenedor sea un contexto de apilamiento para los elementos internos */
   z-index: 1; /* Asegura que los elementos internos estén por encima del pseudo-elemento ::before */
-  padding-top: 40vh;
-  padding-left: 20vh;
+  padding-top: 37vh;
+  padding-left: 35vh;
   width: auto;
 }
 .intro-contenedor-inicio {
   display: flex;
   flex-direction: column;
-  padding: 0px 4vh;
   row-gap: 5vh;
 }
 .intro-contenedor-inicio-title {
@@ -208,12 +208,8 @@ html {
   flex-direction: column;
   justify-content: flex-start;
   padding-top: 4vh;
-  color: #f2f8f9;
+  color: #dddcdc;
   row-gap: 24px;
-}
-.intro-contenedor-inicio-title h1 {
-  color: #f2f8f9;
-  font-size: 5vh;
 }
 .intro-contenedor-inicio-buttons {
   display: flex;
@@ -221,53 +217,70 @@ html {
   column-gap: 4vh;
 }
 
-.servicios {
-  background-color: #312c47;
-  color: #f2f8f9;
-  height: 90vh;
+.introduccion {
+  padding: 64px 35vh;
+  background-color: #dddcdc;
 }
-.servicios-contenedor-titulo {
-  padding: 32px 0vh;
-  padding-left: 20vh;
+.introduccion-titulo {
+  margin-bottom: 24px;
+}
+.introduccion-tarjetas {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  column-gap: 32px;
+}
+
+.servicios {
+  background-color: #2c2d3c;
+  color: #dddcdc;
+  height: 90vh;
+  padding: 64px 35vh;
+}
+.servicios-contenedor {
+  display: flex;
+  flex-direction: column;
+  row-gap: 32px;
 }
 .servicios-contenedor-tarjetas {
-  display: flex;
-  justify-content: center;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 32px;
   column-gap: 4vh;
 }
 
 .estudio {
-  background-color: #eaf1f3;
-  color: #312c47;
+  background-color: #dddcdc;
+  color: #2c2d3c;
   height: 90%;
 }
+.estudio-contenedor {
+  padding: 64px 35vh;
+}
 .estudio-contenedor-titulo {
-  padding: 32px 25vh;
-  font-size: 32px;
+  padding-bottom: 32px;
 }
 .estudio-contenedor-presentacion {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  flex-wrap: wrap;
-  row-gap: 32px;
-  column-gap: 4vh;
-  padding: 0px 20vh;
+  display: grid;
+  grid-template-rows: 1fr 1fr;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+.estudio-contenedor-presentacion-principal {
+  grid-column: span 4;
 }
 .estudio-contenedor-presentacion-secundaria {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  flex-wrap: wrap;
-  column-gap: 24px;
-  row-gap: 24px;
-  margin-bottom: 64px;
+  display: grid;
+  grid-template-rows: 1fr;
+  grid-template-columns: repeat(4, 1fr);
+}
+.estudio-contenedor-presentacion-secundaria-tarjeta {
+  width: 100%;
 }
 
 .contacto {
   height: 90vh;
-  background-image: url("../../fotos/Sin título-1-06-06.jpg");
+  background-image: url("../../img/backgrounds/background-contacto.jpg");
   background-size: cover;
 }
 .contacto-contenedor {
@@ -275,12 +288,10 @@ html {
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  padding-top: 20vh;
-  margin: 0px 30vh;
   column-gap: 64px;
 }
 .contacto-contenedor-informacion {
-  color: #f2f8f9;
+  color: #dddcdc;
   display: flex;
   flex-direction: column;
   row-gap: 48px;

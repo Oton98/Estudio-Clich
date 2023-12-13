@@ -1,7 +1,7 @@
 .primary-button,
 .secondary-button {
-    background-color: $color-quaternary;
-    color: $color-tertiary;
+    background-color: $color-secundary;
+    color: $color-quaternary;
     padding: 10px 20px; /* Ajusté el padding para que sea más proporcionado */
     border-radius: 2px;
     min-width: 100px;
@@ -13,5 +13,5 @@
 }
 
 .secondary-button {
-    background-color: $color-secundary;
+    background-color: $color-primary;
 }

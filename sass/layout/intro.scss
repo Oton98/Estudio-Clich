@@ -1,7 +1,7 @@
 .intro {
-    height: 100vh;
+    height: 90vh;
     position: relative;
-    background-image: url('../../fotos/Sin\ título-1-06-01.jpg');
+    background-image: url('../../img/backgrounds/background-intro.jpg');
     background-size: cover;
 
     &::before {
@@ -18,15 +18,15 @@
         position: relative; /* Asegura que el contenedor sea un contexto de apilamiento para los elementos internos */
         z-index: 1; /* Asegura que los elementos internos estén por encima del pseudo-elemento ::before */
 
-        padding-top: 40vh;
-        padding-left: 20vh;
+        padding-top: 37vh;
+        padding-left: 35vh;
 
         width: auto;
 
         &-inicio {
             display: flex;
             flex-direction: column;
-            padding: 0px 4vh;
+         
             row-gap: 5vh;
 
             &-title {
@@ -36,11 +36,7 @@
                 padding-top: 4vh;
                 color: $color-tertiary;
                 row-gap: 24px;
-
-                h1 {
-                    color: $color-tertiary;
-                    font-size: 5vh;
-                }
+                
             }
 
             &-buttons {

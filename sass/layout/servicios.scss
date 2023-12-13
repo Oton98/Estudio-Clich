@@ -3,20 +3,23 @@
     color: $color-tertiary;
     height: 90vh;
     
+    padding: 64px 35vh;
+
     &-contenedor {
 
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
 
         &-titulo {
             
-        padding: 32px 0vh; 
-        padding-left: 20vh;   
-
         }
 
         &-tarjetas {
-            display: flex;
-            justify-content: center;
-            flex-direction: row;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 32px;
             column-gap: 4vh;
         }
     }

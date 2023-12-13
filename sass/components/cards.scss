@@ -1,51 +1,46 @@
 .servicios-contenedor-tarjetas-tarjeta {
-    background-color: $color-senary;
+    background-color: $color-tertiary;
     color: $color-primary;
     display: flex;
-    flex-direction: column;
-    width: 250px;
+    flex-direction: row;
+    width: 100%;
+    border-bottom: 16px solid $color-secundary;
 
-    &-img {}
+    &-img {
+        padding: 24px 16px;
+    }
 
     &-text {
         display: flex;
         flex-direction: column;
-        justify-content: space-between;
-        row-gap: 20px;
-        padding: 24px 16px;
-    }
+        row-gap: 16px;
+        padding: 24px 0;
 
+        h4 {
+            font-size: 20pt;
+            font-weight: 600;
+        }
+
+        p, a {
+            font-size: 13pt;
+            font-weight: 400;
+        }
+    }
 }
 
 .estudio-contenedor-presentacion-principal-tarjeta {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
     background-color: $color-primary;
     color: $color-tertiary;
-    padding: 16px;
-    column-gap: 32px;
+
 
     &-img {
-        display: flex;
-        width: 100%;
-        flex-grow: 1;
-        object-fit: cover;
-        background-color: white;
 
     }
 
     &-titulo {}
 
     &-descripcion {
-        display: flex;
-        flex-direction: column;
-        row-gap: 32px;
 
-        &-button {
-            display: flex;
-            justify-content: flex-start;
-        }
     }
 
 }
@@ -53,46 +48,42 @@
 .estudio-contenedor-presentacion-secundaria-tarjeta {
     background-color: $color-primary;
     color: $color-tertiary;
-    display: flex;
-    flex-direction: column;
-    align-items: stretch;
-    row-gap: 16px;
-    padding: 16px;
-    max-width: 226px;
-
 
     &-img {
-        width: 100%;
-        height: 30vh;
-        object-fit: cover;
-        background-color: white;
 
     }
 
     &-titulo {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        min-height: 40px;
+
     }
 
     &-descripcion {
+
+    }
+}
+
+.introduccion-tarjetas-tarjeta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $color-quaternary;
+    background-color: $color-primary;
+    width: 30%;
+    padding: 36px;
+    row-gap: 24px;
+    border-bottom: 16px solid $color-secundary;
+
+    img {
+        width: 50%;
+        height: 60%;
+        margin-bottom: 16px; /* Ajusta la cantidad de espacio que deseas entre la imagen y el párrafo */
+    }
+
+    p {
         display: flex;
         flex-direction: column;
-        align-items: center;
+        align-items: flex-start;
         row-gap: 16px;
         flex-grow: 1;
-        /* Hace que la descripción ocupe todo el espacio disponible */
-
-        p {
-            flex-grow: 1;
-            /* Hace que el párrafo ocupe todo el espacio disponible */
-        }
-
-        .primary-button {
-            /* Estilos para el botón */
-            align-self: center;
-            /* Alinea el botón al principio de su contenedor */
-        }
     }
 }
