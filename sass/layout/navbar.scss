@@ -13,10 +13,8 @@
     z-index: 2;
     padding: 16px;
     transition: top 0.3s ease-in-out, color 0.3s ease-in-out;
-    
-    &-logo {
- 
-    }
+
+    &-logo {}
 
     &-links {
         display: flex;
@@ -25,11 +23,15 @@
         column-gap: 64px;
         font-weight: 300;
         font-size: 16pt;
-        
+
 
         &-item:hover {
             color: black;
             transition: color 0.3s ease-in-out;
         }
+    }
+
+    &-mobile {
+        display: none;
     }
 }

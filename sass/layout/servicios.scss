@@ -2,7 +2,7 @@
     background-color: $color-primary;
     color: $color-tertiary;
     height: 90vh;
-    
+
     padding: 64px 16vw;
 
     &-contenedor {
@@ -11,9 +11,7 @@
         flex-direction: column;
         row-gap: 32px;
 
-        &-titulo {
-            
-        }
+        &-titulo {}
 
         &-tarjetas {
             display: grid;
@@ -24,3 +22,4 @@
         }
     }
 }
+

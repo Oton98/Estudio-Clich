@@ -1,5 +1,6 @@
 @import "./utils/variables.scss";
 
+
 @import "./base/reset.scss";
 
 @import "./components/buttons.scss";
@@ -13,3 +14,5 @@
 @import "./layout/servicios.scss";
 @import "./layout/estudio.scss";
 @import "./layout/contacto.scss";
+
+@import "./utils/mediaQueries.scss";

@@ -1,4 +1,4 @@
-.formulario{
+.formulario {
     display: flex;
     flex-direction: column;
     row-gap: 16px;
@@ -7,23 +7,22 @@
     width: 80%;
 
 
-    &-inputs{
+    &-inputs {
         display: flex;
         flex-direction: column;
         row-gap: 16px;
         color: $color-quaternary;
 
-        label{
+        label {}
 
-        }
-
-        input{
+        input {
             background-color: $color-primary;
             color: $color-senary;
             border-bottom: 2px solid $color-senary;
             padding: 8px;
         }
-        textarea{
+
+        textarea {
             background-color: $color-primary;
             color: $color-senary;
             border-bottom: 2px solid $color-senary;
@@ -31,9 +30,8 @@
         }
     }
 
-    &-btn{
+    &-btn {
         display: flex;
         justify-content: center;
     }
 }
-

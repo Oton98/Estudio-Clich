@@ -21,7 +21,8 @@
             font-weight: 600;
         }
 
-        p, a {
+        p,
+        a {
             font-size: 13pt;
             font-weight: 400;
         }
@@ -29,36 +30,98 @@
 }
 
 .estudio-contenedor-presentacion-principal-tarjeta {
+    display: flex;
+    flex-direction: row;
+    padding: 24px;
+    column-gap: 24px;
     background-color: $color-primary;
     color: $color-tertiary;
-
-
-    &-img {
-
-    }
-
-    &-titulo {}
-
-    &-descripcion {
-
-    }
-
-}
-
-.estudio-contenedor-presentacion-secundaria-tarjeta {
-    background-color: $color-primary;
-    color: $color-tertiary;
+    border-bottom: 16px solid $color-secundary;
 
     &-img {
+        img {
+            min-width: 200px;
+        }
 
     }
 
     &-titulo {
+        display: flex;
+        flex-direction: column;
+        h2 {
+            font-size: 20pt;
+            font-weight: bold;
+        }
 
     }
 
     &-descripcion {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
 
+        &-button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 16px;
+
+            i {
+                font-size: 2.4rem;
+            }
+        }
+    }
+
+
+}
+
+.estudio-contenedor-presentacion-secundaria-tarjeta {
+    display: flex;
+    flex-direction: column;
+    padding: 16px;
+    background-color: $color-primary;
+    color: $color-tertiary;
+    width: 25%;
+    border-bottom: 16px solid $color-secundary;
+
+    &-img {
+        img {
+            display: flex;
+            justify-content: center;
+            min-width: 100px;
+
+        }
+    }
+
+    &-titulo {
+
+        padding: 16px 0px;
+
+        h4 {
+            font-size: 16pt;
+            font-weight: bold;
+        }
+    }
+
+    &-descripcion {
+
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+
+        &-button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 16px;
+            margin-top: auto;
+
+
+            i {
+                font-size: 3.5rem;
+            }
+        }
     }
 }
 
@@ -76,7 +139,8 @@
     img {
         width: 50%;
         height: 60%;
-        margin-bottom: 16px; /* Ajusta la cantidad de espacio que deseas entre la imagen y el párrafo */
+        margin-bottom: 16px;
+
     }
 
     p {
@@ -87,3 +151,4 @@
         flex-grow: 1;
     }
 }
+
