@@ -11,3 +11,4 @@ document.querySelectorAll('a').forEach(anchor => {
         });
     });
 });
+

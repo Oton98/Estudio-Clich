@@ -1,9 +1,24 @@
-.footer{
+.footer {
     display: flex;
     justify-content: space-around;
     align-items: center;
+    column-gap: 10vw;
     background-color: $color-primary;
     color: $color-tertiary;
     height: 10vh;
+    padding: 2vh;
+
+    @include mobile-small {
+        padding: 32px;
+    }
+
+    // Estilos para tamaño de pantalla grande
+    @include mobile-large {
+        padding: 32px;
+    }
+    
+    img{
+        min-width: 100px;
+    }
 
 }

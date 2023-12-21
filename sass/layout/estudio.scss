@@ -1,3 +1,5 @@
+@import "../utils/mixin.scss";
+
 .estudio {
 
     background-color: $color-tertiary;
@@ -6,6 +8,14 @@
 
     &-contenedor {
         padding: 64px 16vw;
+
+        @include mobile-small {
+            padding: 24px 32px;
+        }
+
+        @include mobile-large{
+            padding: 24px 32px;
+        }
 
         &-titulo {
             padding-bottom: 32px;
@@ -24,13 +34,18 @@
                 flex-direction: row;
                 column-gap: 16px;
 
+                @include mobile-small {
+                    flex-direction: column;
+                    row-gap: 24px;
+                }
+
+                @include mobile-large{
+                    flex-direction: column;
+                    row-gap: 24px;
+                }
+
+
             }
         }
     }
-}
-
-@media screen and (max-width: 480px) {
-
-    
-
 }

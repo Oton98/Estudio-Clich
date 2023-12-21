@@ -1,15 +1,34 @@
+@import "../utils/mixin.scss";
+
 .servicios {
     background-color: $color-primary;
     color: $color-tertiary;
-    height: 90vh;
-
+    height: 60vh;
     padding: 64px 16vw;
+
+    @include mobile-small {
+        height: auto;
+        padding: 24px 10vw;
+    }
+    
+    @include mobile-large{
+        height: auto;
+        padding: 24px 10vw;
+    }
 
     &-contenedor {
 
         display: flex;
         flex-direction: column;
         row-gap: 32px;
+
+        @include mobile-small {
+            padding: 24px 32px;
+        }
+
+        @include mobile-large{
+            padding: 24px 32px;
+        }
 
         &-titulo {}
 
@@ -19,7 +38,17 @@
             grid-template-rows: 1fr 1fr;
             gap: 32px;
             column-gap: 4vh;
+
+            @include mobile-small {
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+
+            @include mobile-large{
+                grid-template-columns: 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+            }
+
         }
     }
 }
-

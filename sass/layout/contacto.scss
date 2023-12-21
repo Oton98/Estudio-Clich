@@ -1,13 +1,36 @@
+@import "../utils/mixin.scss";
+
 .contacto {
     height: 90vh;
-    background-image: url('../../img/backgrounds/background-contacto.jpg');
+    background-image: url('https://i.ibb.co/K7Nv2MF/background-contacto.jpg');
     background-size: cover;
+
+    @include mobile-small {
+        height: auto;
+    }
+
+    @include mobile-large {
+        height: auto;
+    }
 
     &-contenedor {
         display: flex;
         flex-direction: row;
         padding: 0px 16vw;
         column-gap: 10vw;
+
+        @include mobile-small {
+            flex-direction: column;
+            padding: 24px 32px;
+            row-gap: 24px;
+        }
+
+        @include mobile-large {
+            flex-direction: column;
+            padding: 24px 32px;
+            row-gap: 24px;
+        }
+
 
         &-informacion {
             color: $color-tertiary;
@@ -16,14 +39,34 @@
             padding: 64px 0px;
             row-gap: 32px;
 
+            @include mobile-small {
+                padding: 0px 0px;
+            }
+
+            @include mobile-large {
+                padding: 0px 0px;
+            }
+
             &-title {
-                font-size: 32px;
+                h2 {
+                    font-size: 30pt;
+                    font-weight: bold;
+                }
+
             }
 
             &-text {
                 display: flex;
                 flex-direction: column;
                 row-gap: 10vh;
+
+                @include mobile-small {
+                    row-gap: 32px;
+                }
+
+                @include mobile-large {
+                    row-gap: 32px;
+                }
 
                 &-contacto {
                     display: flex;

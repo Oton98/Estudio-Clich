@@ -1,3 +1,66 @@
+@import "../utils/mixin.scss";
+
+.introduccion-tarjetas-tarjeta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $color-quaternary;
+    background-color: $color-primary;
+    width: 30%;
+    padding: 36px;
+    row-gap: 24px;
+    border-bottom: 16px solid $color-secundary;
+
+    @include mobile-small {
+        flex-direction: row;
+        align-items: flex-start;
+        width: auto;
+        border-bottom: none;
+        border-left: 16px solid $color-secundary;
+        column-gap: 16px;
+        padding: 24px;
+    }
+
+    @include mobile-large {
+        flex-direction: row;
+        align-items: flex-start;
+        width: auto;
+        border-bottom: none;
+        border-left: 16px solid $color-secundary;
+        column-gap: 16px;
+        padding: 24px;
+
+    }
+
+
+    img {
+        width: 50%;
+        height: 60%;
+        margin-bottom: 16px;
+
+        @include mobile-small {
+            width: auto;
+            height: auto;
+            max-width: 48px;
+        }
+
+        @include mobile-large {
+            width: auto;
+            height: auto;
+            max-width: 48px;
+        }
+
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 16px;
+        flex-grow: 1;
+    }
+}
+
 .servicios-contenedor-tarjetas-tarjeta {
     background-color: $color-tertiary;
     color: $color-primary;
@@ -5,6 +68,18 @@
     flex-direction: row;
     width: 100%;
     border-bottom: 16px solid $color-secundary;
+
+    @include mobile-small {
+        width: auto;
+        border-bottom: none;
+        border-bottom: 16px solid $color-secundary;
+    }
+
+    @include mobile-large {
+        width: auto;
+        border-bottom: none;
+        border-bottom: 16px solid $color-secundary;
+    }
 
     &-img {
         padding: 24px 16px;
@@ -15,6 +90,24 @@
         flex-direction: column;
         row-gap: 16px;
         padding: 24px 0;
+
+        @include mobile-small {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            column-gap: 16px;
+            padding: 16px 8px 8px 0;
+
+        }
+
+        @include mobile-large {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            column-gap: 16px;
+            padding: 16px 8px 8px 0;
+
+        }
 
         h4 {
             font-size: 20pt;
@@ -38,6 +131,22 @@
     color: $color-tertiary;
     border-bottom: 16px solid $color-secundary;
 
+    @include mobile-small {
+        flex-direction: column;
+        padding: 24px;
+        row-gap: 24px;
+        background-color: $color-primary;
+        color: $color-tertiary;
+    }
+
+    @include mobile-large {
+        flex-direction: column;
+        padding: 24px;
+        row-gap: 24px;
+        background-color: $color-primary;
+        color: $color-tertiary;
+    }
+
     &-img {
         img {
             min-width: 200px;
@@ -48,6 +157,18 @@
     &-titulo {
         display: flex;
         flex-direction: column;
+
+        @include mobile-small {
+            flex-direction: row;
+            column-gap: 4px;
+        }
+
+        @include mobile-large {
+            flex-direction: row;
+            column-gap: 4px;
+        }
+
+
         h2 {
             font-size: 20pt;
             font-weight: bold;
@@ -60,14 +181,23 @@
         flex-direction: column;
         row-gap: 24px;
 
+
         &-button {
             display: flex;
             flex-direction: row;
             align-items: center;
             column-gap: 16px;
 
+            @include mobile-small {
+                justify-content: center;
+            }
+
+            @include mobile-large {
+                justify-content: center;
+            }
+
             i {
-                font-size: 2.4rem;
+                font-size: 2.3rem;
             }
         }
     }
@@ -79,15 +209,25 @@
     display: flex;
     flex-direction: column;
     padding: 16px;
-    background-color: $color-primary;
+    background-color: $color-septenary;
     color: $color-tertiary;
     width: 25%;
     border-bottom: 16px solid $color-secundary;
 
+    @include mobile-small {
+        width: auto;
+    }
+
+    @include mobile-large {
+        width: auto;
+    }
+
     &-img {
+        display: flex;
+        justify-content: center;
+
         img {
-            display: flex;
-            justify-content: center;
+
             min-width: 100px;
 
         }
@@ -113,42 +253,31 @@
         &-button {
             display: flex;
             flex-direction: row;
+            justify-content: center;
             align-items: center;
             column-gap: 16px;
             margin-top: auto;
 
+            @include mobile-small {
+                justify-content: center;
+            }
+
+            @include mobile-large {
+                justify-content: center;
+            }
+
 
             i {
-                font-size: 3.5rem;
+                font-size: 2.2rem;
+
+                @include mobile-small {
+                    font-size: 2.4rem;
+                }
+
+                @include mobile-large {
+                    font-size: 2.4rem;
+                }
             }
         }
     }
 }
-
-.introduccion-tarjetas-tarjeta {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    color: $color-quaternary;
-    background-color: $color-primary;
-    width: 30%;
-    padding: 36px;
-    row-gap: 24px;
-    border-bottom: 16px solid $color-secundary;
-
-    img {
-        width: 50%;
-        height: 60%;
-        margin-bottom: 16px;
-
-    }
-
-    p {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-start;
-        row-gap: 16px;
-        flex-grow: 1;
-    }
-}
-

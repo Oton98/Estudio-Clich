@@ -1,7 +1,9 @@
+@import "../utils/mixin.scss";
+
 .intro {
-    height: 90vh;
+    height: 100vh;
     position: relative;
-    background-image: url('../../img/backgrounds/background-intro.jpg');
+    background-image: url('https://i.ibb.co/KzpTZ5V/background-intro.jpg');
     background-size: cover;
 
     &::before {
@@ -11,24 +13,48 @@
         left: 0;
         width: 100%;
         height: 100%;
-        background-color: rgba(0, 0, 0, 0.5); /* Ajusta la opacidad según lo oscuro que desees el filtro */
+        background-color: rgba(0, 0, 0, 0.5);
+        /* Ajusta la opacidad según lo oscuro que desees el filtro */
     }
 
     &-contenedor {
-        position: relative; /* Asegura que el contenedor sea un contexto de apilamiento para los elementos internos */
-        z-index: 1; /* Asegura que los elementos internos estén por encima del pseudo-elemento ::before */
-
+        position: relative;
+        /* Asegura que el contenedor sea un contexto de apilamiento para los elementos internos */
+        z-index: 1;
+        /* Asegura que los elementos internos estén por encima del pseudo-elemento ::before */
         padding-top: 37vh;
         padding-left: 16vw;
 
         width: auto;
 
+        @include mobile-small {
+            padding: 16vh 0px 0px 0px;
+            margin: 0px;
+        }
+
+        @include mobile-large {
+            padding: 16vh 0px 0px 0px;
+            margin: 0px;
+        }
+
         &-inicio {
             display: flex;
             flex-direction: column;
             padding: 32px;
-         
             row-gap: 5vh;
+
+            @include mobile-small {
+                padding-top: 200px;
+                row-gap: 32px;
+                padding-left: 10vh;
+            }
+
+            @include mobile-large {
+                padding-top: 30vh;
+                row-gap: 32px;
+                padding-left: 15vh;
+            }
+
 
             &-title {
                 display: flex;
@@ -37,6 +63,35 @@
                 padding-top: 4vh;
                 color: $color-tertiary;
                 row-gap: 24px;
+
+                @include mobile-small {
+                    row-gap: 8px;
+
+                    h1 {
+                        font-size: 36pt;
+                        line-height: 48px;
+                    }
+
+
+                    h2 {
+                        font-size: 18pt;
+                    }
+                }
+
+                @include mobile-large{
+                    row-gap: 8px;
+
+                    h1 {
+                        font-size: 36pt;
+                        line-height: 48px;
+                    }
+
+
+                    h2 {
+                        font-size: 18pt;
+                    }
+
+                }
                 
             }
 

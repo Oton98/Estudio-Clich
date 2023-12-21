@@ -1,3 +1,5 @@
+@import "../utils/mixin.scss";
+
 .navbar {
     position: fixed;
     top: 0;
@@ -6,24 +8,64 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    align-items: center;
-    row-gap: 24px;
     background-color: rgba(32, 32, 32, 0.8);
     color: $color-tertiary;
     z-index: 2;
-    padding: 16px;
     transition: top 0.3s ease-in-out, color 0.3s ease-in-out;
 
-    &-logo {}
-
-    &-links {
-        display: flex;
+    // Estilos para tamaño de pantalla pequeño
+    @include mobile-small {
+        height: 20vh;
+        justify-content: space-between;
         flex-direction: row;
-        align-items: center;
-        column-gap: 64px;
-        font-weight: 300;
-        font-size: 16pt;
+        overflow-x: hidden;
+        transform: translateX(0);
 
+    }
+
+    // Estilos para tamaño de pantalla grande
+    @include mobile-large {
+        flex-direction: row;
+        justify-content: space-around;
+        overflow-x: hidden;
+        transform: translateX(0);
+    }
+
+    // Logo
+    &-logo {
+        @include mobile-small {
+            padding: 32px;
+        }
+
+        // Estilos para tamaño de pantalla grande
+        @include mobile-large {
+            padding: 32px;
+        }
+    }
+
+    // Enlaces de la barra de navegación
+    &-links {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    column-gap: 64px;
+    font-weight: 300;
+    font-size: 16pt;
+
+    // Estilos para tamaño de pantalla pequeño
+    @include mobile-small {
+        position: absolute;
+        padding-top: 32px;
+        row-gap: 16px;
+        top: 20vh;
+        height: 80vh;
+        left: 0;
+        width: 100%;
+        background-color: rgba(32, 32, 32, 1); //preguntar por esto
+        z-index: 2;
+        opacity: 0;
+        transform: translateX(-100%);
+        transition: opacity 0.5s ease-in-out, transform 0.5s cubic-bezier(0.22, 1, 0.36, 1);
 
         &-item:hover {
             color: black;
@@ -31,7 +73,46 @@
         }
     }
 
-    &-mobile {
+    // Estilos para tamaño de pantalla grande
+    @include mobile-large {
         display: none;
+        &-item:hover {
+            color: black;
+            transition: color 0.3s ease-in-out;
+        }
+    }
+}
+
+&-links.active {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    opacity: 1;
+    transform: translateX(0);
+
+    // Estilos para tamaño de pantalla pequeño
+    @include mobile-small {
+        transform: translateY(0); // Ajusta según sea necesario
+    }
+}
+
+    &-mobile-open {
+        display: none;
+
+        @include mobile-small {
+            display: block;
+            font-size: 32px;
+            padding: 32px;
+        }
+    }
+
+    &-mobile-close {
+        display: none;
+
+        @include mobile-small {
+            display: none;
+            font-size: 32px;
+            padding: 32px;
+        }
     }
 }

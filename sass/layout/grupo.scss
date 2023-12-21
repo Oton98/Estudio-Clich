@@ -1,16 +1,36 @@
-.introduccion{
+@import "../utils/mixin.scss";
+
+.introduccion {
 
     padding: 64px 16vw;
     background-color: $color-tertiary;
 
-    &-titulo{
+    @include mobile-small {
+        padding: 24px 10vw;
+    }
+
+    @include mobile-large {
+        padding: 24px 10vw;
+    }
+
+    &-titulo {
         margin-bottom: 24px;
     }
 
-    &-tarjetas{
+    &-tarjetas {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         column-gap: 32px;
+
+        @include mobile-small {
+            flex-direction: column;
+            row-gap: 16px;
+        }
+
+        @include mobile-large {
+            flex-direction: column;
+            row-gap: 16px;
+        }
     }
 }
