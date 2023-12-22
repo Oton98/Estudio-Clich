@@ -40,7 +40,6 @@
         &-inicio {
             display: flex;
             flex-direction: column;
-            padding: 32px;
             row-gap: 5vh;
 
             @include mobile-small {

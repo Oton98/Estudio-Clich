@@ -44,6 +44,11 @@
                     row-gap: 24px;
                 }
 
+                @include tablet{
+                    flex-direction: column;
+                    row-gap: 24px;
+                }
+
 
             }
         }
