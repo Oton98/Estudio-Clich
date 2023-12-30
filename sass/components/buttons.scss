@@ -41,12 +41,14 @@
     background-color: #0c6052;
     color: white;
     border: 2px solid #0c6052;
+    cursor: pointer;
 }
 
 .secondary-button:hover{
     background-color: #141423;
     color: white;
     border: 2px solid #141423;
+    cursor: pointer;
 }
 
 .primary-button{
@@ -56,4 +58,27 @@
 .secondary-button {
     background-color: $color-primary;
     border: 2px solid $color-primary;
+}
+
+.leerMenos{
+    transition: color 0.1s ease-in-out;
+    color: $color-primary;
+    text-decoration: underline;
+}
+
+.leerMas{
+    transition: color 0.1s ease-in-out;
+    color: $color-primary;
+    text-decoration: underline;
+}
+
+.leerMenos:hover{
+    cursor: pointer;
+    color: rgb(121, 13, 103);
+
+}
+
+.leerMas:hover{
+    cursor: pointer;
+    color: rgb(121, 13, 103);
 }

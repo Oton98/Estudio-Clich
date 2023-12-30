@@ -3,7 +3,7 @@
 .servicios {
     background-color: $color-primary;
     color: $color-tertiary;
-    height: 60vh;
+    height: auto;
     padding: 64px 16vw;
 
     @include mobile-small {
@@ -36,8 +36,8 @@
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: 1fr 1fr;
-            gap: 32px;
-            column-gap: 4vh;
+            gap: 6vh;
+            
 
             @include mobile-small {
                 grid-template-columns: 1fr;
@@ -52,3 +52,4 @@
         }
     }
 }
+

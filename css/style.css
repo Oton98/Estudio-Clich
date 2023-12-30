@@ -86,12 +86,14 @@ h4 {
   background-color: #0c6052;
   color: white;
   border: 2px solid #0c6052;
+  cursor: pointer;
 }
 
 .secondary-button:hover {
   background-color: #141423;
   color: white;
   border: 2px solid #141423;
+  cursor: pointer;
 }
 
 .primary-button {
@@ -101,6 +103,28 @@ h4 {
 .secondary-button {
   background-color: #2c2d3c;
   border: 2px solid #2c2d3c;
+}
+
+.leerMenos {
+  transition: color 0.1s ease-in-out;
+  color: #2c2d3c;
+  text-decoration: underline;
+}
+
+.leerMas {
+  transition: color 0.1s ease-in-out;
+  color: #2c2d3c;
+  text-decoration: underline;
+}
+
+.leerMenos:hover {
+  cursor: pointer;
+  color: rgb(121, 13, 103);
+}
+
+.leerMas:hover {
+  cursor: pointer;
+  color: rgb(121, 13, 103);
 }
 
 .introduccion-tarjetas-tarjeta {
@@ -168,7 +192,9 @@ h4 {
   color: #2c2d3c;
   display: flex;
   flex-direction: row;
-  width: 100%;
+  width: auto;
+  padding: 24px;
+  column-gap: 16px;
   border-bottom: 16px solid #0f9e88;
 }
 @media (max-width: 480px) {
@@ -186,13 +212,13 @@ h4 {
   }
 }
 .servicios-contenedor-tarjetas-tarjeta-img {
-  padding: 24px 16px;
+  min-width: 80px;
+  max-width: 80px;
 }
 .servicios-contenedor-tarjetas-tarjeta-text {
   display: flex;
   flex-direction: column;
   row-gap: 16px;
-  padding: 24px 0;
 }
 @media (max-width: 480px) {
   .servicios-contenedor-tarjetas-tarjeta-text {
@@ -222,6 +248,24 @@ h4 {
   font-weight: 400;
 }
 
+.topics {
+  display: none;
+}
+
+.mostrar-topics {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+
+.mostrar-topics ul {
+  padding-left: 16px;
+}
+
+.mostrar-topics ul li {
+  list-style-type: disc;
+}
+
 .estudio-contenedor-presentacion-principal-tarjeta {
   display: flex;
   flex-direction: row;
@@ -248,6 +292,11 @@ h4 {
     background-color: #2c2d3c;
     color: #dddcdc;
   }
+}
+.estudio-contenedor-presentacion-principal-tarjeta-img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 .estudio-contenedor-presentacion-principal-tarjeta-img img {
   min-width: 200px;
@@ -319,8 +368,6 @@ h4 {
 @media (min-width: 811px) and (max-width: 1200px) {
   .estudio-contenedor-presentacion-secundaria-tarjeta {
     width: auto;
-    flex-direction: row;
-    column-gap: 16px;
   }
 }
 .estudio-contenedor-presentacion-secundaria-tarjeta-img {
@@ -332,7 +379,8 @@ h4 {
 }
 @media (min-width: 811px) and (max-width: 1200px) {
   .estudio-contenedor-presentacion-secundaria-tarjeta-img img {
-    max-width: 150px;
+    min-width: 100px;
+    max-width: 200px;
   }
 }
 .estudio-contenedor-presentacion-secundaria-tarjeta-titulo {
@@ -340,7 +388,7 @@ h4 {
 }
 @media (min-width: 811px) and (max-width: 1200px) {
   .estudio-contenedor-presentacion-secundaria-tarjeta-titulo {
-    padding: 0;
+    padding: 16px 32px;
   }
 }
 .estudio-contenedor-presentacion-secundaria-tarjeta-titulo h4 {
@@ -355,8 +403,7 @@ h4 {
 }
 @media (min-width: 811px) and (max-width: 1200px) {
   .estudio-contenedor-presentacion-secundaria-tarjeta-descripcion {
-    min-width: 300px;
-    max-width: 301px;
+    padding: 0 32px;
   }
 }
 .estudio-contenedor-presentacion-secundaria-tarjeta-descripcion-button {
@@ -379,7 +426,7 @@ h4 {
 }
 @media (min-width: 811px) and (max-width: 1200px) {
   .estudio-contenedor-presentacion-secundaria-tarjeta-descripcion-button {
-    justify-content: flex-start;
+    justify-content: center;
   }
 }
 .estudio-contenedor-presentacion-secundaria-tarjeta-descripcion-button i {
@@ -507,7 +554,7 @@ h4 {
   }
   .navbar-links {
     position: absolute;
-    padding: 32px 0 0 0;
+    padding: 80px 0 0 0;
     row-gap: 16px;
     top: 20vh;
     left: 0;
@@ -760,7 +807,7 @@ h4 {
 .servicios {
   background-color: #2c2d3c;
   color: #dddcdc;
-  height: 60vh;
+  height: auto;
   padding: 64px 16vw;
 }
 @media (max-width: 480px) {
@@ -794,8 +841,7 @@ h4 {
   display: grid;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: 1fr 1fr;
-  gap: 32px;
-  column-gap: 4vh;
+  gap: 6vh;
 }
 @media (max-width: 480px) {
   .servicios-contenedor-tarjetas {
@@ -825,7 +871,7 @@ h4 {
 }
 @media (min-width: 481px) and (max-width: 810px) {
   .estudio-contenedor {
-    padding: 24px 32px;
+    padding: 24px 10vw;
   }
 }
 .estudio-contenedor-titulo {
@@ -855,13 +901,18 @@ h4 {
 }
 @media (min-width: 811px) and (max-width: 1200px) {
   .estudio-contenedor-presentacion-secundaria {
-    flex-direction: column;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    flex-grow: 1;
+    width: 100%;
     row-gap: 24px;
   }
 }
 
 .contacto {
-  height: 90vh;
+  height: auto;
+  min-height: 90vh;
   background-image: url("https://i.ibb.co/K7Nv2MF/background-contacto.jpg");
   background-size: cover;
 }
