@@ -16,7 +16,7 @@ function checkSize() {
   } else {
     iconOpen.style.display = 'block';
     iconClose.style.display = 'none';
-    navbar.style.height = '20vh';
+    navbar.style.height = 'auto';
   }
 }
 
@@ -34,16 +34,16 @@ iconClose.addEventListener('click', function () {
   navbarLinks.classList.remove('active');
   iconOpen.style.display = 'block';
   iconClose.style.display = 'none';
-  navbar.style.height = '20vh';
+  navbar.style.height = 'auto';
   isIconOpenVisible = true;
 });
 
-// Llamada inicial para configurar el estado inicial
+// // Llamada inicial para configurar el estado inicial
 checkSize();
 
 
-/* tengo que si se cambia el tamaño 
-del screen y supera los 810 px, tengo que ocultar tanto
-el iconClose y el iconOpen y poner el display en none.
-*/
+// /* tengo que si se cambia el tamaño 
+// del screen y supera los 810 px, tengo que ocultar tanto
+// el iconClose y el iconOpen y poner el display en none.
+// */
 

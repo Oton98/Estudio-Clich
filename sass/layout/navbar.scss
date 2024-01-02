@@ -13,6 +13,7 @@
     z-index: 2;
     transition: top 0.3s ease-in-out, color 0.3s ease-in-out;
 
+
     &-intro {
 
         display: flex;
@@ -45,17 +46,13 @@
     //versión mobile para celulares 
 
     @include mobile-small {
-        height: 20vh;
-        justify-content: space-between;
-        flex-direction: row;
-        overflow-x: hidden;
-        transform: translateX(0);
+        // overflow-x: hidden;
+        // transform: translateX(0);
 
         &-intro {
-            position: fixed;
-            top: 0;
-            width: 100%;
-            z-index: 3;
+            // position: fixed;
+            // top: 0;
+            // z-index: 3;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -82,7 +79,7 @@
             position: absolute;
             padding: 80px 0 0 0;
             row-gap: 16px;
-            top: 20vh;
+            top: 133px;
             left: 0;
             height: 80vh;
             width: 100%;
@@ -105,6 +102,7 @@
                 row-gap: 32px;
                 opacity: 1;
                 transform: translateX(0) translateY(0);
+                height: 100vh;
             }
         }
     }
@@ -112,18 +110,12 @@
     //versión mobile para celulares modernos
 
     @include mobile-large {
-        height: 20vh;
-        justify-content: space-between;
-        flex-direction: row;
-        overflow-x: hidden;
-        transform: translateX(0);
+        // overflow-x: hidden;
+        // transform: translateX(0);
 
         &-intro {
-            position: fixed;
-            top: 0;
-            width: 100%;
-
-            z-index: 3;
+        //     position: fixed;
+        //     z-index: 3;
             display: flex;
             flex-direction: row;
             justify-content: space-evenly;
@@ -150,7 +142,7 @@
             position: absolute;
             padding: 32px 0 0 0;
             row-gap: 16px;
-            top: 20vh;
+            top: 133px;
             left: 0;
             height: 80vh;
             width: 100%;
@@ -173,6 +165,7 @@
                 row-gap: 32px;
                 opacity: 1;
                 transform: translateX(0) translateY(0);
+                height: 100vh;
             }
         }
 

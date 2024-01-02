@@ -1,7 +1,8 @@
 @import "../utils/mixin.scss";
 
 .intro {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     position: relative;
     background-image: url('https://i.ibb.co/KzpTZ5V/background-intro.jpg');
     background-size: cover;
@@ -19,23 +20,9 @@
 
     &-contenedor {
         position: relative;
-        /* Asegura que el contenedor sea un contexto de apilamiento para los elementos internos */
         z-index: 1;
-        /* Asegura que los elementos internos estén por encima del pseudo-elemento ::before */
-        padding-top: 37vh;
-        padding-left: 16vw;
-
+        padding: 150px 16vw 15vh 16vw;
         width: auto;
-
-        @include mobile-small {
-            padding: 16vh 0px 0px 0px;
-            margin: 0px;
-        }
-
-        @include mobile-large {
-            padding: 16vh 0px 0px 0px;
-            margin: 0px;
-        }
 
         &-inicio {
             display: flex;
@@ -43,15 +30,14 @@
             row-gap: 5vh;
 
             @include mobile-small {
-                padding-top: 200px;
+                align-items: center;
+                justify-content: center;
                 row-gap: 32px;
-                padding-left: 10vh;
+
             }
 
             @include mobile-large {
-                padding-top: 30vh;
-                row-gap: 32px;
-                padding-left: 15vh;
+
             }
 
 
@@ -62,6 +48,16 @@
                 padding-top: 4vh;
                 color: $color-tertiary;
                 row-gap: 24px;
+
+                h1 {
+                    font-size: 36pt;
+                    line-height: 48px;
+                }
+
+
+                h2 {
+                    font-size: 18pt;
+                }
 
                 @include mobile-small {
                     row-gap: 8px;

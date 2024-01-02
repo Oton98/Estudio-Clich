@@ -164,7 +164,7 @@
 
     @include mobile-large {
         flex-direction: column;
-        padding: 24px;
+        padding: 48px;
         row-gap: 24px;
         background-color: $color-primary;
         color: $color-tertiary;
@@ -274,6 +274,12 @@
 
     &-titulo {
 
+    
+        @include mobile-large {
+            padding: 16px 32px;
+        }
+
+
         @include tablet {
             padding: 16px 32px;
         }
@@ -292,6 +298,14 @@
         display: flex;
         flex-direction: column;
         row-gap: 16px;
+
+        @include mobile-small {
+
+         }
+     
+         @include mobile-large {
+            padding: 0px 32px;
+         }
 
         @include tablet {
             padding: 0 32px;
