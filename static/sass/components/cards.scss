@@ -1,0 +1,323 @@
+@import "../utils/mixin.scss";
+
+.introduccion-tarjetas-tarjeta {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    color: $color-quaternary;
+    background-color: $color-primary;
+    width: 30%;
+    padding: 36px;
+    row-gap: 24px;
+    border-bottom: 16px solid $color-secundary;
+
+    @include mobile-small {
+        flex-direction: column;
+        align-items: center;
+        width: auto;
+        border-bottom: 16px solid $color-secundary;
+        column-gap: 16px;
+        padding: 24px;
+    }
+
+    @include mobile-large {
+        flex-direction: row;
+        align-items: flex-start;
+        width: auto;
+        border-bottom: 16px solid $color-secundary;
+        column-gap: 16px;
+        padding: 24px;
+
+    }
+
+
+    img {
+        width: 50%;
+        height: 60%;
+        margin-bottom: 16px;
+
+        @include mobile-small {
+            width: auto;
+            height: auto;
+            max-width: 48px;
+        }
+
+        @include mobile-large {
+            width: auto;
+            height: auto;
+            max-width: 48px;
+        }
+
+    }
+
+    p {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 16px;
+        flex-grow: 1;
+    }
+}
+
+.servicios-contenedor-tarjetas-tarjeta {
+    background-color: $color-tertiary;
+    color: $color-primary;
+    display: flex;
+    flex-direction: row;
+    width: auto;
+    padding: 24px;
+    column-gap: 16px;
+
+    border-bottom: 16px solid $color-secundary;
+
+    @include mobile-small {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        width: auto;
+        border-bottom: none;
+        border-bottom: 16px solid $color-secundary;
+    }
+
+    @include mobile-large {
+        width: auto;
+        border-bottom: none;
+        border-bottom: 16px solid $color-secundary;
+    }
+
+    &-img {
+        min-width: 80px;
+        max-width: 80px;
+    }
+
+    &-text {
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+
+        @include mobile-small {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            column-gap: 16px;
+            padding: 16px 8px 8px 0;
+
+        }
+
+        @include mobile-large {
+            display: flex;
+            flex-direction: column;
+            row-gap: 8px;
+            column-gap: 16px;
+            padding: 16px 8px 8px 0;
+
+        }
+
+        h4 {
+            font-size: 20pt;
+            font-weight: 600;
+        }
+
+        p,
+        a {
+            font-size: 13pt;
+            font-weight: 400;
+        }
+    }
+}
+
+.topics {
+    display: none;
+}
+
+.mostrar-topics {
+    display: flex;
+    flex-direction: column;
+    row-gap: 16px;
+}
+
+.mostrar-topics ul {
+    padding-left: 16px;
+}
+
+.mostrar-topics ul li {
+    list-style-type: disc;
+}
+
+
+
+.estudio-contenedor-presentacion-principal-tarjeta {
+    display: flex;
+    flex-direction: row;
+    background-color: $color-primary;
+    color: $color-tertiary;
+    border-bottom: 8px solid $color-secundary;
+
+    @include mobile-small {
+        flex-direction: column;
+        row-gap: 24px;
+        background-color: $color-primary;
+        color: $color-tertiary;
+    }
+
+    @include mobile-large {
+        flex-direction: column;
+        row-gap: 24px;
+        background-color: $color-primary;
+        color: $color-tertiary;
+    }
+
+
+    &-img {
+        img {
+            
+            min-width: 200px;
+        }
+
+    }
+
+    &-descripcion {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 0 32px;
+        row-gap: 24px;
+
+        &-button {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            column-gap: 16px;
+
+            @include mobile-small {
+                justify-content: center;
+            }
+
+            @include mobile-large {
+                justify-content: center;
+            }
+
+            i {
+                font-size: 2.3rem;
+            }
+        }
+    }
+
+
+}
+
+.estudio-contenedor-presentacion-secundaria-tarjeta {
+    display: flex;
+    flex-direction: column;
+    background-color: $color-septenary;
+    color: $color-tertiary;
+    width: 25%;
+
+    border-bottom: 8px solid $color-secundary;
+
+    @include mobile-small {
+        width: auto;
+    }
+
+    @include mobile-large {
+        width: auto;
+    }
+
+    @include tablet {
+        width: auto;
+    }
+
+    &-img {
+        display: flex;
+        justify-content: center;
+
+        img {
+
+            min-width: 100px;
+
+            @include tablet {
+                min-width: 100px;
+                max-width: 200px;
+            }
+
+        }
+    }
+
+    &-titulo {
+
+    
+        @include mobile-large {
+            padding: 16px 32px;
+        }
+
+
+        @include tablet {
+            padding: 16px 32px;
+        }
+
+        padding: 16px 0px;
+
+        h4 {
+            font-size: 16pt;
+            font-weight: bold;
+        }
+    }
+
+    &-descripcion {
+
+        flex-grow: 1;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+
+        @include mobile-small {
+
+         }
+     
+         @include mobile-large {
+            padding: 0px 32px;
+         }
+
+        @include tablet {
+            padding: 0 32px;
+        }
+
+
+        &-button {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            column-gap: 16px;
+            margin-top: auto;
+
+            @include mobile-small {
+                justify-content: center;
+            }
+
+            @include mobile-large {
+                justify-content: center;
+            }
+
+            @include tablet {
+                justify-content: center;
+            }
+
+
+
+
+            i {
+                font-size: 2.2rem;
+
+                @include mobile-small {
+                    font-size: 2.4rem;
+                }
+
+                @include mobile-large {
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+}

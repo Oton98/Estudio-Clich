@@ -1,0 +1,77 @@
+@import "../utils/mixin.scss";
+
+.footer {
+    display: flex;
+    flex-direction: column;
+    padding: 64px 16vw;
+    background-color: $color-primary;
+    color: $color-tertiary;
+    row-gap: 48px;
+
+    @include mobile-small {
+        padding: 32px;
+    }
+
+    // Estilos para tamaño de pantalla grande
+    @include mobile-large {
+        padding: 32px;
+    }
+    
+    img{
+        min-width: 100px;
+    }
+
+    &-contenedor{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        &-listas{
+            display: flex;
+            flex-direction: row;
+            column-gap: 32px;
+
+            &-general{
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+
+                &-lista{
+                    display: flex;
+                    flex-direction: column;
+                    row-gap: 8px;
+                    font-size: 12pt;
+                    color: $color-septenary;
+                }
+            }
+        }
+
+        &-redes{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+
+            &-general{
+                display: flex;
+                flex-direction: column;
+                row-gap: 8px;
+
+                &-lista{
+                    display: flex;
+                    flex-direction: row;
+                    row-gap: 8px;
+                    column-gap: 16px;
+
+                    i {
+                        font-size: 24px;
+                    }
+    
+                }
+            }
+
+        }
+    }
+
+
+
+}

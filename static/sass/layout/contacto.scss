@@ -1,0 +1,70 @@
+@import "../utils/mixin.scss";
+
+.contacto {
+    height: auto;
+    background-image: url('https://i.ibb.co/K7Nv2MF/background-contacto.jpg');
+    background-size: cover;
+    display: flex;
+    justify-content: center;
+    color: white;
+
+    @include mobile-small {
+        height: auto;
+    }
+
+    @include mobile-large {
+        height: auto;
+    }
+
+    &-contenedor {
+        display: flex;
+        flex-direction: column;
+        padding: 64px 0px;
+        
+        @include mobile-small {
+            flex-direction: column;
+            padding: 24px 32px;
+            row-gap: 24px;
+        }
+
+        @include mobile-large {
+            flex-direction: column;
+            padding: 24px 10vw;
+            row-gap: 24px;
+        }
+
+        &-cabecera{
+            display: flex;
+            flex-direction: column;
+            padding: 0 48px;
+            padding-bottom: 32px;
+            
+        }
+
+        &-informacion{
+
+            &-contacto{
+
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: baseline;
+                padding: 24px 32px;
+                column-gap: 4%;
+                background-color: $color-new;
+                
+                &-direcciones{
+                    display: flex;
+                    flex-direction: row;
+                    align-self: center;
+                    justify-content: center;
+                    align-items: center;
+                    column-gap: 8px;
+                    color: $color-quaternary;
+                }
+            }
+        }
+
+    }
+
+}
