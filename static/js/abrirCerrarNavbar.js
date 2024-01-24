@@ -42,8 +42,3 @@ iconClose.addEventListener('click', function () {
 checkSize();
 
 
-// /* tengo que si se cambia el tamaño 
-// del screen y supera los 810 px, tengo que ocultar tanto
-// el iconClose y el iconOpen y poner el display en none.
-// */
-

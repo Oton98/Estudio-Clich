@@ -10,8 +10,8 @@
         height: auto;
         padding: 24px 10vw;
     }
-    
-    @include mobile-large{
+
+    @include mobile-large {
         height: auto;
         padding: 24px 10vw;
     }
@@ -21,12 +21,13 @@
         display: flex;
         flex-direction: column;
         row-gap: 32px;
+        
 
         @include mobile-small {
             padding: 24px 32px;
         }
 
-        @include mobile-large{
+        @include mobile-large {
             padding: 24px 32px;
         }
 
@@ -35,27 +36,71 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            
+
         }
 
         &-tarjetas {
-            display: grid;
-            grid-template-columns: 1fr 1fr;
-            grid-template-rows: 1fr 1fr;
-            gap: 6vh;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+            max-height: 700px;
+            // display: grid;
+            // grid-template-columns: 1fr 1fr;
+            // grid-template-rows: 1fr 1fr;
+            // row-gap: 24px;
             
+            // grid-template-areas:
+
+            // "tarjeta1 tarjeta3"
+            // "tarjeta2 tarjeta4";
+
 
             @include mobile-small {
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr 1fr 1fr;
+
+                grid-template-areas: 
+                
+                "tarjeta1"
+                "tarjeta2"
+                "tarjeta3"
+                "tarjeta4";
+
             }
 
-            @include mobile-large{
+            @include mobile-large {
                 grid-template-columns: 1fr;
                 grid-template-rows: 1fr 1fr 1fr 1fr;
+
+                grid-template-areas: 
+                
+                "tarjeta1"
+                "tarjeta2"
+                "tarjeta3"
+                "tarjeta4";
+
             }
 
         }
     }
 }
 
+.tarjeta-extendida{
+    height: 700px;
+}
+
+#tarjeta1 {
+    grid-area: tarjeta1;
+}
+
+#tarjeta2 {
+    grid-area: tarjeta2;
+}
+
+#tarjeta3 {
+    grid-area: tarjeta3;
+}
+
+#tarjeta4 {
+    grid-area: tarjeta4;
+}

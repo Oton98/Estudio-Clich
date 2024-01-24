@@ -23,7 +23,6 @@
         
         @include mobile-small {
             flex-direction: column;
-            padding: 24px 32px;
             row-gap: 24px;
         }
 
@@ -43,6 +42,10 @@
 
         &-informacion{
 
+            display: flex;
+            justify-content: center;
+            background-color: $color-new;
+
             &-contacto{
 
                 display: flex;
@@ -52,6 +55,14 @@
                 padding: 24px 32px;
                 column-gap: 4%;
                 background-color: $color-new;
+                width: 100%;
+
+                @include mobile-small{
+                    flex-direction: column;
+                    row-gap: 8px;
+                    width: auto;
+                    
+                }
                 
                 &-direcciones{
                     display: flex;
@@ -61,6 +72,10 @@
                     align-items: center;
                     column-gap: 8px;
                     color: $color-quaternary;
+
+                    @include mobile-small{
+                        align-self: flex-start;
+                    }
                 }
             }
         }

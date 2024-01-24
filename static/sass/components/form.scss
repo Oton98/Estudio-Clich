@@ -6,7 +6,7 @@
     flex-direction: column;
     row-gap: 16px;
     background-color: $color-primary;
-    padding: 64px;
+    padding: 48px 32px;
     width: 80%;
 
     @include mobile-small{
@@ -50,5 +50,7 @@
     &-btn {
         display: flex;
         justify-content: center;
+        align-items: center;
+        padding-top: 16px;
     }
 }

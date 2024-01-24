@@ -64,11 +64,13 @@
     color: $color-primary;
     display: flex;
     flex-direction: row;
-    width: auto;
+    width: 400px;
+    height: 150px;
     padding: 24px;
     column-gap: 16px;
-
     border-bottom: 16px solid $color-secundary;
+    transition: all 2s ease;
+
 
     @include mobile-small {
         flex-direction: column;
@@ -113,6 +115,12 @@
 
         }
 
+        &-ul {
+            overflow: hidden;
+            max-height: 3.6em;
+            transition: all 2s ease;
+        }
+
         h4 {
             font-size: 20pt;
             font-weight: 600;
@@ -126,25 +134,14 @@
     }
 }
 
-.topics {
+
+#listaServicios1.mostrar-todas {
+    max-height: none; /* Mostrar todas las listas */
+}
+
+.leerMenos{
     display: none;
 }
-
-.mostrar-topics {
-    display: flex;
-    flex-direction: column;
-    row-gap: 16px;
-}
-
-.mostrar-topics ul {
-    padding-left: 16px;
-}
-
-.mostrar-topics ul li {
-    list-style-type: disc;
-}
-
-
 
 .estudio-contenedor-presentacion-principal-tarjeta {
     display: flex;
@@ -155,14 +152,12 @@
 
     @include mobile-small {
         flex-direction: column;
-        row-gap: 24px;
         background-color: $color-primary;
         color: $color-tertiary;
     }
 
     @include mobile-large {
         flex-direction: column;
-        row-gap: 24px;
         background-color: $color-primary;
         color: $color-tertiary;
     }
@@ -170,8 +165,11 @@
 
     &-img {
         img {
-            
+
             min-width: 200px;
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
         }
 
     }
@@ -181,7 +179,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
-        padding: 0 32px;
+        padding: 24px 32px;
         row-gap: 24px;
 
         &-button {
@@ -213,7 +211,6 @@
     background-color: $color-septenary;
     color: $color-tertiary;
     width: 25%;
-
     border-bottom: 8px solid $color-secundary;
 
     @include mobile-small {
@@ -233,7 +230,7 @@
         justify-content: center;
 
         img {
-
+            width: 100%;
             min-width: 100px;
 
             @include tablet {
@@ -246,7 +243,10 @@
 
     &-titulo {
 
-    
+        display: flex;
+        justify-content: center;
+
+
         @include mobile-large {
             padding: 16px 32px;
         }
@@ -255,8 +255,6 @@
         @include tablet {
             padding: 16px 32px;
         }
-
-        padding: 16px 0px;
 
         h4 {
             font-size: 16pt;
@@ -268,19 +266,20 @@
 
         flex-grow: 1;
         display: flex;
+        align-items: center;
         flex-direction: column;
         row-gap: 16px;
 
         @include mobile-small {
 
-         }
-     
-         @include mobile-large {
-            padding: 0px 32px;
-         }
+        }
+
+        @include mobile-large {
+
+        }
 
         @include tablet {
-            padding: 0 32px;
+
         }
 
 
@@ -304,9 +303,6 @@
                 justify-content: center;
             }
 
-
-
-
             i {
                 font-size: 2.2rem;
 
@@ -320,4 +316,9 @@
             }
         }
     }
+
+    p {
+        text-align: center;
+    }
+
 }
