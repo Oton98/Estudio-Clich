@@ -40,12 +40,14 @@
             width: auto;
             height: auto;
             max-width: 48px;
+            min-width: 48px;
         }
 
         @include mobile-large {
             width: auto;
             height: auto;
             max-width: 48px;
+            min-width: 48px;
         }
 
     }
@@ -64,12 +66,10 @@
     color: $color-primary;
     display: flex;
     flex-direction: row;
-    width: 400px;
-    height: 150px;
     padding: 24px;
     column-gap: 16px;
     border-bottom: 16px solid $color-secundary;
-    transition: all 2s ease;
+
 
 
     @include mobile-small {
@@ -102,7 +102,7 @@
             flex-direction: column;
             row-gap: 8px;
             column-gap: 16px;
-            padding: 16px 8px 8px 0;
+
 
         }
 
@@ -111,14 +111,13 @@
             flex-direction: column;
             row-gap: 8px;
             column-gap: 16px;
-            padding: 16px 8px 8px 0;
+
 
         }
 
         &-ul {
             overflow: hidden;
             max-height: 3.6em;
-            transition: all 2s ease;
         }
 
         h4 {
@@ -135,9 +134,11 @@
 }
 
 
-#listaServicios1.mostrar-todas {
-    max-height: none; /* Mostrar todas las listas */
+.mostrar-todas{
+    max-height: 100em;
+    transition: all 4s ease;
 }
+
 
 .leerMenos{
     display: none;
@@ -215,10 +216,12 @@
 
     @include mobile-small {
         width: auto;
+        max-width: 350px;
     }
 
     @include mobile-large {
         width: auto;
+        max-width: 350px;
     }
 
     @include tablet {
@@ -245,16 +248,8 @@
 
         display: flex;
         justify-content: center;
+        padding:16px 16px 0 16px;
 
-
-        @include mobile-large {
-            padding: 16px 32px;
-        }
-
-
-        @include tablet {
-            padding: 16px 32px;
-        }
 
         h4 {
             font-size: 16pt;
@@ -269,19 +264,7 @@
         align-items: center;
         flex-direction: column;
         row-gap: 16px;
-
-        @include mobile-small {
-
-        }
-
-        @include mobile-large {
-
-        }
-
-        @include tablet {
-
-        }
-
+        padding: 0 16px 16px 16px;
 
         &-button {
             display: flex;
@@ -322,3 +305,4 @@
     }
 
 }
+

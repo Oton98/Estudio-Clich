@@ -21,7 +21,7 @@
         display: flex;
         flex-direction: column;
         row-gap: 32px;
-        
+
 
         @include mobile-small {
             padding: 24px 32px;
@@ -38,56 +38,77 @@
             align-items: center;
 
         }
-
-        &-tarjetas {
-            display: flex;
-            justify-content: space-around;
-            flex-wrap: wrap;
-            max-height: 700px;
-            // display: grid;
-            // grid-template-columns: 1fr 1fr;
-            // grid-template-rows: 1fr 1fr;
-            // row-gap: 24px;
-            
-            // grid-template-areas:
-
-            // "tarjeta1 tarjeta3"
-            // "tarjeta2 tarjeta4";
-
-
-            @include mobile-small {
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr;
-
-                grid-template-areas: 
-                
-                "tarjeta1"
-                "tarjeta2"
-                "tarjeta3"
-                "tarjeta4";
-
-            }
-
-            @include mobile-large {
-                grid-template-columns: 1fr;
-                grid-template-rows: 1fr 1fr 1fr 1fr;
-
-                grid-template-areas: 
-                
-                "tarjeta1"
-                "tarjeta2"
-                "tarjeta3"
-                "tarjeta4";
-
-            }
-
-        }
+        
     }
 }
 
-.tarjeta-extendida{
-    height: 700px;
+.mobile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
+    // display: grid;
+    // grid-template-columns: 1fr;
+    // grid-template-rows: 1fr 1fr 1fr 1fr;
+    // row-gap: 24px;
+    // grid-template-areas:
+
+    //     "tarjeta1"
+    //     "tarjeta2"
+    //     "tarjeta3"
+    //     "tarjeta4";
 }
+
+.normal {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    gap: 24px;
+    align-self: center;
+    grid-template-areas:
+
+
+        "tarjeta1 tarjeta3"
+        "tarjeta2 tarjeta4";
+}
+
+.extendido1 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "tarjeta1 tarjeta3"
+        "tarjeta1 tarjeta4"
+        "tarjeta1 tarjeta2";
+}
+
+.extendido2 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "tarjeta2 tarjeta1"
+        "tarjeta2 tarjeta4"
+        "tarjeta2 tarjeta3";
+}
+
+.extendido3 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "tarjeta1 tarjeta3"
+        "tarjeta2 tarjeta3"
+        "tarjeta4 tarjeta3";
+}
+
+.extendido4 {
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas:
+        "tarjeta3 tarjeta4"
+        "tarjeta1 tarjeta4"
+        "tarjeta2 tarjeta4";
+}
+
+
+
 
 #tarjeta1 {
     grid-area: tarjeta1;
@@ -95,6 +116,7 @@
 
 #tarjeta2 {
     grid-area: tarjeta2;
+
 }
 
 #tarjeta3 {

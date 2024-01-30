@@ -39,11 +39,13 @@
 
                 @include mobile-small {
                     flex-direction: column;
+                    align-items: center;
                     row-gap: 24px;
                 }
 
                 @include mobile-large{
                     flex-direction: column;
+                    align-items: center;
                     row-gap: 24px;
                 }
 

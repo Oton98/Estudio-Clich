@@ -10,13 +10,13 @@
     width: 80%;
 
     @include mobile-small{
-        width: auto;
-        padding: 32px;
+        // width: auto;
+        // padding: 24px 10vw;
     }
 
     @include mobile-large{
-        width: auto;
-        padding: 32px;
+        // width: auto;
+        // padding: 24px 10vw;
     }
 
     &-inputs {
