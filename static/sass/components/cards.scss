@@ -111,13 +111,16 @@
             flex-direction: column;
             row-gap: 8px;
             column-gap: 16px;
-
-
         }
 
         &-ul {
             overflow: hidden;
             max-height: 3.6em;
+            padding-left: 24px;
+        }
+
+        li{
+          list-style: disc;  
         }
 
         h4 {
@@ -130,6 +133,7 @@
             font-size: 13pt;
             font-weight: 400;
         }
+        
     }
 }
 

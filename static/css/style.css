@@ -241,6 +241,10 @@ h4 {
 .servicios-contenedor-tarjetas-tarjeta-text-ul {
   overflow: hidden;
   max-height: 3.6em;
+  padding-left: 24px;
+}
+.servicios-contenedor-tarjetas-tarjeta-text li {
+  list-style: disc;
 }
 .servicios-contenedor-tarjetas-tarjeta-text h4 {
   font-size: 20pt;
@@ -857,11 +861,13 @@ h4 {
   justify-content: center;
   align-items: center;
 }
-
-.mobile {
-  display: flex;
-  flex-direction: column;
-  row-gap: 24px;
+.servicios-contenedor-tarjetas {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  gap: 24px;
+  align-self: center;
+  grid-template-areas: "tarjeta1 tarjeta3" "tarjeta2 tarjeta4";
 }
 
 .normal {
@@ -871,6 +877,12 @@ h4 {
   gap: 24px;
   align-self: center;
   grid-template-areas: "tarjeta1 tarjeta3" "tarjeta2 tarjeta4";
+}
+
+.mobile {
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
 }
 
 .extendido1 {

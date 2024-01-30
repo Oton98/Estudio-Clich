@@ -3,18 +3,33 @@ import { mostrarMas } from "../utils/mostarMas.js";
 import { mostrarMenos } from "../utils/mostarMenos.js";
 import { chequeoTarjetaServicios, borrarClases } from "../utils/checkClase.js";
 import { chequearTamañoContenedorServicios } from "../utils/checkSizePage.js";
-import { widthScreen } from "../utils/obtenerDatosTarjetas.js";
 
-window.addEventListener('resize', chequearTamañoContenedorServicios);
+var widthScreenInital = parseInt(window.innerWidth);
+var widthScreenLater;
 
-chequearTamañoContenedorServicios();
+window.addEventListener('DOMContentLoaded', (event) => {
+    chequearTamañoContenedorServicios(widthScreenInital);
+});
+
+window.addEventListener('resize', () => {
+    // Llamamos a la función dentro de la función anónima del evento de redimensionamiento
+    chequearTamañoContenedorServicios(widthScreenLater);
+});
+
+window.addEventListener('resize', saveWidthScreen);
+
+function saveWidthScreen() {
+    widthScreenLater = parseInt(window.innerWidth);
+}
+
 
 leerMas.forEach(button => {
     button.addEventListener('click', function () {
         const tarjetaId = button.id;
         const tarjetaClass = contenedorTarjetas.classList;
         const id = tarjetaId[7];
-        if (widthScreen >= 810) {
+        saveWidthScreen();
+        if (widthScreenLater >= 810) {
             chequeoTarjetaServicios(tarjetaClass, id, tarjetaId);
         }
         mostrarMas(id);

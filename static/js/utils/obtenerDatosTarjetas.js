@@ -3,14 +3,13 @@ var leerMas = document.querySelectorAll('.leerMas');
 var leerMenos = document.querySelectorAll('.leerMenos');
 var contenedorTarjetas = document.getElementById('tarjetasServicios');
 
-var widthScreen;
+var widthScreenLater;
 
 window.addEventListener('resize', saveWidthScreen);
 
 function saveWidthScreen() {
-    widthScreen = parseInt(window.innerWidth);
-    console.log("Ancho de la pantalla:", widthScreen);
-    return widthScreen;
+    widthScreenLater = parseInt(window.innerWidth);
+    return widthScreenLater;
 }
 
-export { listaServicios, leerMas, leerMenos, contenedorTarjetas, widthScreen };
+export { listaServicios, leerMas, leerMenos, contenedorTarjetas};

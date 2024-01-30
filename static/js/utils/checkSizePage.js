@@ -1,10 +1,11 @@
 import { borrarClases } from "./checkClase.js";
 import { mostrarMenos } from "./mostarMenos.js";
-import { contenedorTarjetas, widthScreen } from "./obtenerDatosTarjetas.js";
+import { contenedorTarjetas} from "./obtenerDatosTarjetas.js";
 
-export function chequearTamañoContenedorServicios() {
 
-    console.log(widthScreen)
+export function chequearTamañoContenedorServicios(widthScreen) {
+
+    console.log('valor de la pantalla: ', widthScreen);
 
     if (widthScreen > 810) {
         contenedorTarjetas.classList.add("normal");
@@ -13,7 +14,6 @@ export function chequearTamañoContenedorServicios() {
             contenedorTarjetas.classList.remove(`extendido${i}`);
             mostrarMenos(i)
         }
-
 
     } else {
         contenedorTarjetas.classList.add("mobile");

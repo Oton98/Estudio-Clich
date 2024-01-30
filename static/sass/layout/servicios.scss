@@ -38,24 +38,49 @@
             align-items: center;
 
         }
-        
+
+        &-tarjetas {
+
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            grid-template-rows: 1fr 1fr;
+            gap: 24px;
+            align-self: center;
+            grid-template-areas:
+
+
+                "tarjeta1 tarjeta3"
+                "tarjeta2 tarjeta4";
+
+
+            // @include mobile-small {
+            //     grid-template-columns: 1fr;
+            //     grid-template-rows: 1fr 1fr 1fr 1fr;
+
+            //     grid-template-areas:
+
+            //         "tarjeta1"
+            //         "tarjeta2"
+            //         "tarjeta3"
+            //         "tarjeta4";
+
+            // }
+
+            // @include mobile-large {
+            //     grid-template-columns: 1fr;
+            //     grid-template-rows: 1fr 1fr 1fr 1fr;
+
+            //     grid-template-areas:
+
+            //         "tarjeta1"
+            //         "tarjeta2"
+            //         "tarjeta3"
+            //         "tarjeta4";
+
+            // }
+
+        }
     }
-}
-
-.mobile {
-    display: flex;
-    flex-direction: column;
-    row-gap: 24px;
-    // display: grid;
-    // grid-template-columns: 1fr;
-    // grid-template-rows: 1fr 1fr 1fr 1fr;
-    // row-gap: 24px;
-    // grid-template-areas:
-
-    //     "tarjeta1"
-    //     "tarjeta2"
-    //     "tarjeta3"
-    //     "tarjeta4";
 }
 
 .normal {
@@ -69,6 +94,12 @@
 
         "tarjeta1 tarjeta3"
         "tarjeta2 tarjeta4";
+}
+
+.mobile {
+    display: flex;
+    flex-direction: column;
+    row-gap: 24px;
 }
 
 .extendido1 {
@@ -116,7 +147,6 @@
 
 #tarjeta2 {
     grid-area: tarjeta2;
-
 }
 
 #tarjeta3 {

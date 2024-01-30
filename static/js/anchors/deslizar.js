@@ -1,4 +1,4 @@
-document.querySelectorAll('a').forEach(anchor => {
+document.querySelectorAll('#navbar a').forEach(anchor => {
     anchor.addEventListener('click', function (e) {
         e.preventDefault();
 
@@ -11,4 +11,3 @@ document.querySelectorAll('a').forEach(anchor => {
         });
     });
 });
-
