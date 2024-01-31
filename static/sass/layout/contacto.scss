@@ -24,7 +24,7 @@
         
         @include mobile-small {
             flex-direction: column;
-            padding: 24px 10vw;
+            padding: auto;
             row-gap: 24px;
         }
 

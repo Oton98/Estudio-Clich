@@ -300,9 +300,39 @@ h4 {
   padding: 24px 32px;
   row-gap: 24px;
 }
+.estudio-contenedor-presentacion-principal-tarjeta-descripcion-titulo {
+  display: flex;
+  justify-content: center;
+}
+.estudio-contenedor-presentacion-principal-tarjeta-descripcion-titulo h2 {
+  font-size: 20pt;
+  font-weight: bold;
+  text-align: center;
+}
+.estudio-contenedor-presentacion-principal-tarjeta-descripcion-posicion {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.estudio-contenedor-presentacion-principal-tarjeta-descripcion-posicion p:first-child {
+  font-weight: bold;
+  font-size: 14pt;
+}
+.estudio-contenedor-presentacion-principal-tarjeta-descripcion-posicion p:nth-child(2) {
+  font-weight: bold;
+  font-size: 12pt;
+}
+.estudio-contenedor-presentacion-principal-tarjeta-descripcion-detalles {
+  display: flex;
+  flex-direction: column;
+  width: 60%;
+  row-gap: 24px;
+  text-align: center;
+}
 .estudio-contenedor-presentacion-principal-tarjeta-descripcion-button {
   display: flex;
   flex-direction: row;
+  justify-content: center;
   align-items: center;
   column-gap: 16px;
 }
@@ -363,18 +393,29 @@ h4 {
   display: flex;
   justify-content: center;
   padding: 16px 16px 0 16px;
+  margin-bottom: 16px;
 }
 .estudio-contenedor-presentacion-secundaria-tarjeta-titulo h4 {
   font-size: 16pt;
   font-weight: bold;
+  text-align: center;
 }
 .estudio-contenedor-presentacion-secundaria-tarjeta-descripcion {
   flex-grow: 1;
   display: flex;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
   row-gap: 16px;
   padding: 0 16px 16px 16px;
+}
+.estudio-contenedor-presentacion-secundaria-tarjeta-descripcion-detalles p:first-child {
+  font-weight: bold;
+  font-size: 14pt;
+}
+.estudio-contenedor-presentacion-secundaria-tarjeta-descripcion-detalles p:nth-child(2) {
+  font-weight: bold;
+  font-size: 12pt;
 }
 .estudio-contenedor-presentacion-secundaria-tarjeta-descripcion-button {
   display: flex;
@@ -423,6 +464,11 @@ h4 {
   background-color: #2c2d3c;
   padding: 48px 32px;
   width: 80%;
+}
+@media (max-width: 480px) {
+  .formulario {
+    width: auto;
+  }
 }
 .formulario-inputs {
   display: flex;
@@ -1010,7 +1056,7 @@ h4 {
 @media (max-width: 480px) {
   .contacto-contenedor {
     flex-direction: column;
-    padding: 24px 10vw;
+    padding: auto;
     row-gap: 24px;
   }
 }

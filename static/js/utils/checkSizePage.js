@@ -5,7 +5,7 @@ import { contenedorTarjetas} from "./obtenerDatosTarjetas.js";
 
 export function chequearTamañoContenedorServicios(widthScreen) {
 
-    console.log('valor de la pantalla: ', widthScreen);
+    // console.log('valor de la pantalla: ', widthScreen);
 
     if (widthScreen > 810) {
         contenedorTarjetas.classList.add("normal");

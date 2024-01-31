@@ -119,8 +119,8 @@
             padding-left: 24px;
         }
 
-        li{
-          list-style: disc;  
+        li {
+            list-style: disc;
         }
 
         h4 {
@@ -133,18 +133,18 @@
             font-size: 13pt;
             font-weight: 400;
         }
-        
+
     }
 }
 
 
-.mostrar-todas{
+.mostrar-todas {
     max-height: 100em;
     transition: all 4s ease;
 }
 
 
-.leerMenos{
+.leerMenos {
     display: none;
 }
 
@@ -187,9 +187,45 @@
         padding: 24px 32px;
         row-gap: 24px;
 
+        &-titulo {
+            display: flex;
+            justify-content: center;
+
+            h2 {
+                font-size: 20pt;
+                font-weight: bold;
+                text-align: center;
+            }
+        }
+
+        &-posicion {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+
+            p:first-child {
+                font-weight: bold;
+                font-size: 14pt;
+            }
+
+            p:nth-child(2) {
+                font-weight: bold;
+                font-size: 12pt;
+            }
+        }
+
+        &-detalles {
+            display: flex;
+            flex-direction: column;
+            width: 60%;
+            row-gap: 24px;
+            text-align: center;
+        }
+
         &-button {
             display: flex;
             flex-direction: row;
+            justify-content: center;
             align-items: center;
             column-gap: 16px;
 
@@ -252,12 +288,13 @@
 
         display: flex;
         justify-content: center;
-        padding:16px 16px 0 16px;
-
+        padding: 16px 16px 0 16px;
+        margin-bottom: 16px;
 
         h4 {
             font-size: 16pt;
             font-weight: bold;
+            text-align: center;
         }
     }
 
@@ -265,10 +302,23 @@
 
         flex-grow: 1;
         display: flex;
+        justify-content: center;
         align-items: center;
         flex-direction: column;
         row-gap: 16px;
         padding: 0 16px 16px 16px;
+
+        &-detalles {
+            p:first-child {
+                font-weight: bold;
+                font-size: 14pt;
+            }
+
+            p:nth-child(2) {
+                font-weight: bold;
+                font-size: 12pt;
+            }
+        }
 
         &-button {
             display: flex;
@@ -309,4 +359,3 @@
     }
 
 }
-
