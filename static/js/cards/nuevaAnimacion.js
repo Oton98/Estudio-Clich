@@ -3,6 +3,7 @@ import { mostrarMas } from "../utils/mostarMas.js";
 import { mostrarMenos } from "../utils/mostarMenos.js";
 import { chequeoTarjetaServicios, borrarClases } from "../utils/checkClase.js";
 import { chequearTamañoContenedorServicios } from "../utils/checkSizePage.js";
+// import { agregarClaseImgExtendido, quitarClaseImgExtendido } from "../utils/modificarLogo.js"; habria que probarlo como queda
 
 var widthScreenInital = parseInt(window.innerWidth);
 var widthScreenLater;
@@ -22,7 +23,6 @@ function saveWidthScreen() {
     widthScreenLater = parseInt(window.innerWidth);
 }
 
-
 leerMas.forEach(button => {
     button.addEventListener('click', function () {
         const tarjetaId = button.id;
@@ -31,9 +31,9 @@ leerMas.forEach(button => {
         saveWidthScreen();
         if (widthScreenLater >= 810) {
             chequeoTarjetaServicios(tarjetaClass, id, tarjetaId);
+            // agregarClaseImgExtendido(id); habria que probarlo como queda
         }
         mostrarMas(id);
-
     });
 });
 
@@ -41,9 +41,8 @@ leerMenos.forEach(button => {
     button.addEventListener('click', function () {
         const tarjetaId = button.id;
         const id = tarjetaId[9];
-        // Pasa el elemento contenedorTarjetas como parámetro
         borrarClases(contenedorTarjetas);
         mostrarMenos(id);
-
+        // quitarClaseImgExtendido(id); habria que probarlo como queda
     });
 });

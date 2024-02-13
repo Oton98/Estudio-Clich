@@ -10,26 +10,26 @@
 
     @include mobile-small {
         padding: 32px;
-        
+
     }
 
     // Estilos para tamaño de pantalla grande
     @include mobile-large {
         padding: 24px 10vw;
     }
-    
-    img{
+
+    img {
         min-width: 100px;
     }
 
-    &-logo{
-        @include mobile-small{
+    &-logo {
+        @include mobile-small {
             display: flex;
             justify-content: center;
         }
     }
 
-    &-contenedor{
+    &-contenedor {
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -39,65 +39,74 @@
             flex-direction: column;
             row-gap: 48px;
         }
-        
-        &-listas{
+
+        &-listas {
             display: flex;
             flex-direction: row;
             column-gap: 32px;
 
-            &-general{
+            &-general {
                 display: flex;
                 flex-direction: column;
                 row-gap: 8px;
 
-                &-lista{
+                &-lista {
                     display: flex;
                     flex-direction: column;
                     row-gap: 8px;
                     font-size: 12pt;
                     color: $color-septenary;
 
-                    @include mobile-small{
+
+                    li {
+                        transition: all 1s ease;
+                    }
+
+                    li:hover {
+                        color: white;
+                    }
+
+                    @include mobile-small {
                         row-gap: 8px;
                     }
                 }
             }
         }
 
-        &-redes{
+        &-redes {
             display: flex;
             flex-direction: column;
             justify-content: space-between;
 
-            @include mobile-small{
+            @include mobile-small {
                 align-items: center;
                 row-gap: 16px;
             }
 
-            &-general{
+            &-general {
                 display: flex;
                 flex-direction: column;
                 row-gap: 8px;
 
-                @include mobile-small{
+                @include mobile-small {
                     justify-content: center;
                 }
-    
 
-                &-lista{
+
+                &-lista {
                     display: flex;
                     flex-direction: row;
                     row-gap: 8px;
                     column-gap: 16px;
 
-                    @include mobile-small{
+                    @include mobile-small {
                         justify-content: center;
-                    }    
+                    }
 
                     i {
                         font-size: 24px;
                     }
-    
+
                 }
             }
 
